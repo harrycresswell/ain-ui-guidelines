@@ -1,0 +1,11 @@
+colors:
+  primary:
+    Color-ain: "rgb(74, 140, 255)"
+  secondary:
+    Color-ain-dark: "rgb(45, 114, 235)"
+    Color-ain-bright: "rgb(64, 63, 255)"
+  tertairy:
+    Color-global: "rgb(85, 107, 204)"
+    Color-executive: "rgb(49, 112, 143)"
+    Color-pro: "rgb(85, 160, 240)"
+    Color-novice: "rgb(85, 198, 204)"

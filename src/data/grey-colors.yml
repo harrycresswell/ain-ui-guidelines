@@ -1,0 +1,15 @@
+colors:
+  primary:
+    Color-darker: "rgb(27, 32, 47)"
+    Color-grey-lightest: "rgb(246, 249, 251)"
+  secondary:
+    Color-dark: "rgb(37, 49, 66)"
+    Color-dark-mid: "rgb(79, 87, 102)"
+    Color-dark-light: "rgb(99, 111, 123)"
+    Color-grey-warm: "rgb(151, 156, 166)"
+  tertairy:
+    Color-grey: "rgb(205, 211, 217)"
+    Color-grey-cool: "rgb(180, 195, 211)"
+    Color-grey-cooler: "rgb(216, 226, 236)"
+    Color-grey-light: "rgb(223, 233, 242)"
+    Color-grey-lighter: "rgb(242, 246, 249)"
