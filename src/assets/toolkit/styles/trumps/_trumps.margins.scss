@@ -1,7 +1,11 @@
 .u-marginTop-s {
-  margin-top: $spacing-unit-default;
+  margin-top: $spacing-unit-small;
 }
 
 .u-marginBottom-s {
   margin-bottom: $spacing-unit-default;
+}
+
+.u-marginBottom-l {
+  margin-bottom: $spacing-unit-big;
 }
