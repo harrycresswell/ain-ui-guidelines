@@ -1,0 +1,46 @@
+<h4>Brand Colors</h4>
+
+<p>Primary brand colors are used for elements that must reflect AIN’s brand.</p>
+
+{{#each brand-colors.colors}}
+	<div class="f-color-chips">
+	{{#each this}}
+		<div class="f-color-chip">
+			<div class="f-color-chip__name">{{@key}}</div>
+			<div class="f-color-chip__color">{{this}}</div>
+		</div>
+	{{/each}}
+	</div>
+{{/each}}
+
+
+<h4>Grey Colors</h4>
+
+<p>Grey colors are used for text, backgrounds, lines and borders. Smoke and Snow have two darker shades, which are used for icons and backgrounds.</p>
+
+{{#each grey-colors.colors}}
+	<div class="f-color-chips">
+	{{#each this}}
+		<div class="f-color-chip">
+			<div class="f-color-chip__name">{{@key}}</div>
+			<div class="f-color-chip__color">{{this}}</div>
+		</div>
+	{{/each}}
+	</div>
+{{/each}}
+
+
+<h4>UI Colors</h4>
+
+<p>The main UI colors are used for action buttons, alert messages, and form elements. Input fields, for example, can get positive and negative feedback, whereas alert messages can have warning feedback.</p>
+
+{{#each ui-colors.colors}}
+	<div class="f-color-chips">
+	{{#each this}}
+		<div class="f-color-chip">
+			<div class="f-color-chip__name">{{@key}}</div>
+			<div class="f-color-chip__color">{{this}}</div>
+		</div>
+	{{/each}}
+	</div>
+{{/each}}
