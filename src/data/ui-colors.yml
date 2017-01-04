@@ -1,0 +1,8 @@
+colors:
+  primary:
+    Red: "rgb(255, 73, 73)"
+    Yellow: "rgb(252, 207, 80)"
+    Blue: "rgb(0, 140, 255)"
+    Green: "rgb(19, 206, 102)"
+  secondary:
+  tertairy:
