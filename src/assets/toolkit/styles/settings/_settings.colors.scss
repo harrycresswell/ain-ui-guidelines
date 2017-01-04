@@ -1,37 +1,59 @@
 /**
- * Colors
+ * Brand Colors
  */
 
-$color-brand: #011eff;
-$color-brand-highlight: lighten($color-brand, 15%);
-$color-brand-shadow:     darken($color-brand, 15%);
+// Primary
+$color-ain: #4A8CFF; // rgb(74, 140, 255)
+$color-ain-highlight: lighten($color-ain, 10%);
+$color-ain-shadow:     darken($color-ain, 15%);
+
+// Secondary
+$color-ain-dark: #2D72EB; // rgb(45, 114, 235)
+$color-ain-bright: #403FFF; // rgb(64, 63, 255)
+
+// Tertairy
+$color-global: #556BCC; // rgb(85, 107, 204)
+$color-executive: #31708F; // rgb(49, 112, 143)
+$color-pro: #55A0CC; // rgb(85, 160, 240)
+$color-novice: #55C6CC; // rgb(85, 198, 204)
 
 
 /**
  * Greyscale
  */
 
-$color-black: #2a2a2a; // rgb(42, 42, 42)
-$color-grey-darkest: #3d3d3d; // rgb(61, 61, 61)
-$color-grey-darker: #525252; // rgb(82, 82, 82)
-$color-grey-dark: #666; // rgb(102, 102, 102)
-$color-grey: #7a7a7a; // rgb(122, 122, 122)
-$color-grey-light: #a4a4a4; // rgb(164, 164, 164)
-$color-grey-lighter: #ccc; // rgb(204, 204, 204)
-$color-grey-lightest: #f4f4f4; // rgb(244, 244, 244)
+$color-darker: #1B202F; // rgb(27, 32, 47)
+$color-black: $color-darker; // rgb(27, 32, 47)
+$color-dark: #253142; // rgb(37, 49, 66)
+$color-dark-mid: #4F5766; // rgb(79, 87, 102)
+$color-dark-light: #636F7B; // rgb(99, 111, 123)
+$color-grey-warm: #979CA6; // rgb(151, 156, 166)
+$color-grey-cool: #B4C3D3; // rgb(180, 195, 211)
+$color-grey-cooler: #D8E2EC; // rgb(216, 226, 236)
+$color-grey: #CDD3D9; // rgb(205, 211, 217)
+$color-grey-light: #DFE9F2; // rgb(223, 233, 242)
+$color-grey-lighter: #F2F6F9; // rgb(242, 246, 249)
+$color-grey-lightest: #F6F9FB; // rgb(246, 249, 251)
 $color-white: #fff; // rgb(255, 255, 255)
 
 
-// UI
-$color-ui:          $color-grey-light;
+/**
+ * UI Colors
+ */
+
+$color-info: #008CFF; // rgb(0, 140, 255)
+$color-positive: #13CE66; // rgb(53, 203, 125)
+$color-negative: #FF4949; // rgb(249, 67, 67)
+$color-warning: #FFC82C; // rgb(255, 200, 44)
+
 
 // Text
-$color-text:        $color-grey-dark;
+$color-text:        $color-dark-mid;
 
 // Links
-$color-link:        $color-brand;
-$color-link-hover:  $color-brand-shadow;
+$color-link:        $color-ain;
+$color-link-hover:  $color-ain-shadow;
 
 // Buttons
-$color-btn:         $color-brand;
-$color-btn-hover:   $color-brand-shadow;
+$color-btn:         $color-ain;
+$color-btn-hover:   $color-ain-shadow;
