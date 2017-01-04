@@ -13,6 +13,11 @@
 	<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 
+	<!-- Include Material icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<!-- /Include Material icons -->
+
 </head>
 <body>
 
@@ -95,6 +100,17 @@
 					</ul>
 				</li>
 				<li>
+					<a href="design.html" class="f-menu__heading">Design</a>
+					<ul>
+						<li>
+							<a href="design.html#color-scheme">Color Scheme</a>
+						</li>
+						<li>
+							<a href="design.html#typography">Typography</a>
+						</li>
+					</ul>
+				</li>
+				<li>
 					<a href="structures.html" class="f-menu__heading">Structures</a>
 					<ul>
 						<li>
@@ -145,9 +161,9 @@
 	<div class="f-item-heading-group">
 		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
 	</div>
-		<div class="f-item-group" id="buttons.primary">
+		<div class="f-item-group" id="buttons.01-primary-regular">
 			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Primary</h3>
+				<h3 class="f-item-heading">Primary Regular</h3>
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
 						<svg>
@@ -161,42 +177,64 @@
 					</span>
 				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Primary buttons are used for main Call to Actions (CTAs) which we want the user to take. Define a button size with <code>.Button--s</code>, <code>.Button--m</code>, <code>.Button--l</code>. <code>.is-disabled</code> can be used to disable a button.</p>
+	<p>Primary buttons are used for the main actions which we want our users to take. Use them sparingly, to draw attention to the most important actions. A primary buttons should not be used alongside another primary button. Use the <code>Button</code> class followed by <code>Button--primary</code>.  To disable a button use <code>.is-disabled</code>.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="u-marginBottom-s u-marginTop-s">
-	<button class="Button Button--primary Button--l">Submit</button>
+	<!-- Primary Regular Button -->
+<h4>Button Sizes</h4>
+
+<p>Define a regular primary button with either of the following size modifiers <code>.Button--s</code>, <code>.Button--m</code>, <code>.Button--l</code>. The <code>.with-100</code> modifier can be used when a button needs to span the full width of it's container.
+	An example of this would be in a modal.</p>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<button class="Button Button--primary Button--l">Submit</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--primary Button--m">Publish</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--primary Button--s">Submit</button>
+		</div>
+		<div>
+			<button class="Button Button--primary Button--s is-disabled">Submit</button>
+		</div>
+	</div>
 </div>
-<div class="u-marginBottom-s">
-	<button class="Button Button--primary Button--m">Submit</button>
-</div>
-<div class="u-marginBottom-s">
-	<button class="Button Button--primary Button--s">Submit</button>
-</div>
-<div class="u-marginBottom-s">
-	<button class="Button Button--primary Button--s is-disabled">Submit</button>
-</div>
+<!-- /Primary Regular Button -->
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-marginBottom-s u-marginTop-s&quot;&gt;
-	&lt;button class&#x3D;&quot;Button Button--primary Button--l&quot;&gt;Submit&lt;/button&gt;
+	<pre><code class="language-markup">&lt;!-- Primary Regular Button --&gt;
+&lt;h4&gt;Button Sizes&lt;/h4&gt;
+
+&lt;p&gt;Define a regular primary button with either of the following size modifiers &lt;code&gt;.Button--s&lt;/code&gt;, &lt;code&gt;.Button--m&lt;/code&gt;, &lt;code&gt;.Button--l&lt;/code&gt;. The &lt;code&gt;.with-100&lt;/code&gt; modifier can be used when a button needs to span the full width of it&#x27;s container.
+	An example of this would be in a modal.&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--primary Button--l&quot;&gt;Submit&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--primary Button--m&quot;&gt;Publish&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--primary Button--s&quot;&gt;Submit&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Button Button--primary Button--s is-disabled&quot;&gt;Submit&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
-	&lt;button class&#x3D;&quot;Button Button--primary Button--m&quot;&gt;Submit&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
-	&lt;button class&#x3D;&quot;Button Button--primary Button--s&quot;&gt;Submit&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
-	&lt;button class&#x3D;&quot;Button Button--primary Button--s is-disabled&quot;&gt;Submit&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+&lt;!-- /Primary Regular Button --&gt;</code></pre>
 </div>
 
 		</div>
-		<div class="f-item-group" id="buttons.secondary">
+		<div class="f-item-group" id="buttons.02-primary-round">
 			<div class="f-item-heading-group" data-f-toggle="labels">
-				<h3 class="f-item-heading">Secondary</h3>
+				<h3 class="f-item-heading">Primary Round</h3>
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
 						<svg>
@@ -210,36 +248,679 @@
 					</span>
 				</div>
 			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>button</code> component.</p>
+	<p>Round primary buttons are used as an alternative to the main regular shape. They are most commonly found in modals where the user is given two options. Similarly <code>.is-disabled</code> can be used to disable a button.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="u-marginBottom-s u-marginTop-s">
-	<button class="Button Button--secondary Button--l">Submit</button>
+	<!-- Primary Round Button -->
+<h4>Button Sizes</h4>
+
+<p>Round buttons should only use the <code>.Button--l</code> size modifier.</p>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<button class="Button Button--primary Button--round Button--l">Let's do it</button>
+		</div>
+		<div>
+			<button class="Button Button--round Button--l is-disabled">Let's do it</button>
+		</div>
+	</div>
 </div>
-<div class="u-marginBottom-s">
-	<button class="Button Button--secondary Button--m">Submit</button>
-</div>
-<div class="u-marginBottom-s">
-	<button class="Button Button--secondary Button--s">Submit</button>
-</div>
-<div class="u-marginBottom-s">
-	<button class="Button Button--s is-disabled">Submit</button>
-</div>
+<!-- /Primary Round Button -->
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-marginBottom-s u-marginTop-s&quot;&gt;
-	&lt;button class&#x3D;&quot;Button Button--secondary Button--l&quot;&gt;Submit&lt;/button&gt;
+	<pre><code class="language-markup">&lt;!-- Primary Round Button --&gt;
+&lt;h4&gt;Button Sizes&lt;/h4&gt;
+
+&lt;p&gt;Round buttons should only use the &lt;code&gt;.Button--l&lt;/code&gt; size modifier.&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--primary Button--round Button--l&quot;&gt;Let&#x27;s do it&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Button Button--round Button--l is-disabled&quot;&gt;Let&#x27;s do it&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
-	&lt;button class&#x3D;&quot;Button Button--secondary Button--m&quot;&gt;Submit&lt;/button&gt;
+&lt;!-- /Primary Round Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.03-primary-floating">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Primary Floating</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Primary buttons are used for the main actions which we want our users to take. Use them sparingly, to draw attention to the most important actions. A primary buttons should not be used alongside another primary button. If a particular pattern requires more than one button then a secondary button should be used with the primary button.  <code>.is-disabled</code> can be used to disable a button.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Floating Action Button -->
+<h4>.Button--floating</h4>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<button class="Button Button--primary Button--floating"><i class="material-icons">share</i></button>
+		</div>
+		<div>
+			<button class="Button Button--primary Button--floating"><i class="material-icons">add</i></button>
+		</div>
+	</div>
+</div>
+<!-- /Floating Action Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Floating Action Button --&gt;
+&lt;h4&gt;.Button--floating&lt;/h4&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--primary Button--floating&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Button Button--primary Button--floating&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;add&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
-	&lt;button class&#x3D;&quot;Button Button--secondary Button--s&quot;&gt;Submit&lt;/button&gt;
+&lt;!-- /Floating Action Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.04-secondary-regular">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Secondary Regular</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Secondary buttons contrast primary buttons. Secondary buttons should be used to signify optional, infrequent or subtle actions <code>.is-disabled</code> can be used to disable a button.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Secondary Regular Button -->
+<h4>Button Sizes</h4>
+
+<p>Define a regular secondary button with either of the following size modifiers <code>.Button--s</code>, <code>.Button--m</code>, <code>.Button--l</code>.</p>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<button class="Button Button--secondary Button--l">Submit</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--secondary Button--m">Preview Proposal</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--secondary Button--s">Clear Search</button>
+		</div>
+		<div>
+			<button class="Button Button--s is-disabled">Clear Search</button>
+		</div>
+	</div>
+</div>
+<!-- /Secondary Regular Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Secondary Regular Button --&gt;
+&lt;h4&gt;Button Sizes&lt;/h4&gt;
+
+&lt;p&gt;Define a regular secondary button with either of the following size modifiers &lt;code&gt;.Button--s&lt;/code&gt;, &lt;code&gt;.Button--m&lt;/code&gt;, &lt;code&gt;.Button--l&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--secondary Button--l&quot;&gt;Submit&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--secondary Button--m&quot;&gt;Preview Proposal&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--secondary Button--s&quot;&gt;Clear Search&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Button Button--s is-disabled&quot;&gt;Clear Search&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
-	&lt;button class&#x3D;&quot;Button Button--s is-disabled&quot;&gt;Submit&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+&lt;!-- /Secondary Regular Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.05-secondary-round">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Secondary Round</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Secondary buttons contrast primary buttons. Secondary buttons should be used to signify optional, infrequent or subtle actions <code>.is-disabled</code> can be used to disable a button.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Secondary Round Button -->
+<h4>.Button--round</h4>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<button class="Button Button--secondary Button--round Button--l">Not right now</button>
+		</div>
+		<div>
+			<button class="Button Button--round Button--l is-disabled">Not right now</button>
+		</div>
+	</div>
+</div>
+<!-- /Secondary Round Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Secondary Round Button --&gt;
+&lt;h4&gt;.Button--round&lt;/h4&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--secondary Button--round Button--l&quot;&gt;Not right now&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Button Button--round Button--l is-disabled&quot;&gt;Not right now&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Secondary Round Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.06-secondary-icon">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Secondary Icon</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Icon buttons contrast primary buttons. Secondary buttons should be used to signify optional, infrequent or subtle actions <code>.is-disabled</code> can be used to disable a button.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Icon Button -->
+<h4>.Button--icon</h4>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-l">
+			<button class="Icon Icon--s Button Button--secondary"><i class="material-icons md-14">thumb_up</i></button>
+			<button class="Icon Icon--s Button Button--secondary Button--icon"><i class="material-icons md-14">thumb_down</i></button>
+			<button class="Icon Icon--s Button Button--secondary Button--icon"><i class="material-icons md-14">mail</i></button>
+			<button class="Icon Icon--s Button Button--secondary Button--icon"><i class="material-icons md-14">archive</i></button>
+			<button class="Icon Icon--s Button Button--secondary Button--icon"><i class="material-icons md-14">star</i></button>
+		</div>
+
+		<div class="u-marginBottom-l u-marginTop-s">
+			<button class="Icon is-pressed Icon--s Button Button--secondary Button--icon"><i class="material-icons md-14 ainBlue">star</i></button>
+		</div>
+
+		<div class="u-marginBottom-l u-marginTop-s">
+			<button class="Icon Icon--m Button Button--secondary"><i class="material-icons md-18">more_horiz</i></button>
+			<button class="Icon Icon--m Button Button--secondary Button--icon"><i class="material-icons md-18">star</i></button>
+			<button class="Icon Icon--m Button Button--secondary Button--icon"><i class="material-icons md-18">mail</i></button>
+		</div>
+
+		<div>
+			<button class="Icon Icon--l Button Button--secondary"><i class="material-icons md-24">star</i></button>
+		</div>
+	</div>
+</div>
+<!-- /Icon Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Icon Button --&gt;
+&lt;h4&gt;.Button--icon&lt;/h4&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-l&quot;&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--secondary&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;thumb_up&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--secondary Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;thumb_down&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--secondary Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;mail&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--secondary Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;archive&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--secondary Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;star&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;u-marginBottom-l u-marginTop-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Icon is-pressed Icon--s Button Button--secondary Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14 ainBlue&quot;&gt;star&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;u-marginBottom-l u-marginTop-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--m Button Button--secondary&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;more_horiz&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--m Button Button--secondary Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;star&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--m Button Button--secondary Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;mail&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--l Button Button--secondary&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-24&quot;&gt;star&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Icon Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.07-ghost-regular">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ghost Regular</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Ghost buttons are used on dark backgrounds or reversed themes. Use the <code>Button--ghost</code> modifier followed by the required size modifier.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Regular Button -->
+<h4>Button Sizes</h4>
+
+<p>Define a regular secondary button with either of the following size modifiers <code>.Button--s</code>, <code>.Button--m</code>, <code>.Button--l</code>.</p>
+
+<div class="u-container-dark-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<button class="Button Button--ghost Button--l">Submit</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--ghost Button--m">Log In</button>
+		</div>
+		<div>
+			<button class="Button Button--ghost Button--s">Clear Search</button>
+		</div>
+	</div>
+</div>
+<!-- /Regular Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Regular Button --&gt;
+&lt;h4&gt;Button Sizes&lt;/h4&gt;
+
+&lt;p&gt;Define a regular secondary button with either of the following size modifiers &lt;code&gt;.Button--s&lt;/code&gt;, &lt;code&gt;.Button--m&lt;/code&gt;, &lt;code&gt;.Button--l&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;u-container-dark-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--ghost Button--l&quot;&gt;Submit&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--ghost Button--m&quot;&gt;Log In&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Button Button--ghost Button--s&quot;&gt;Clear Search&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Regular Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.08-ghost-round">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ghost Round</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Ghost buttons are used on dark backgrounds or reversed themes. Use the <code>Button--ghost</code> modifier followed by the required size modifier.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Regular Button -->
+<h4>.Button--round</h4>
+
+<p>Define a regular secondary button with either of the following size modifiers <code>.Button--s</code>, <code>.Button--m</code>, <code>.Button--l</code>.</p>
+
+<div class="u-container-dark-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<button class="Button Button--ghost Button--round Button--l">Submit</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--ghost Button--round Button--m">Log In</button>
+		</div>
+		<div>
+			<button class="Button Button--ghost Button--round Button--s">Clear Search</button>
+		</div>
+	</div>
+</div>
+<!-- /Regular Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Regular Button --&gt;
+&lt;h4&gt;.Button--round&lt;/h4&gt;
+
+&lt;p&gt;Define a regular secondary button with either of the following size modifiers &lt;code&gt;.Button--s&lt;/code&gt;, &lt;code&gt;.Button--m&lt;/code&gt;, &lt;code&gt;.Button--l&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;u-container-dark-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--ghost Button--round Button--l&quot;&gt;Submit&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--ghost Button--round Button--m&quot;&gt;Log In&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Button Button--ghost Button--round Button--s&quot;&gt;Clear Search&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Regular Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.09-ghost-icon-text">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ghost Icon Text</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Ghost buttons are used on dark backgrounds or reversed themes. Use the <code>Button--ghost</code> modifier followed by the required size modifier.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Regular Button -->
+<h4>Button Sizes</h4>
+
+<p>Define a regular secondary button with either of the following size modifiers <code>.Button--m</code>, <code>.Button--l</code>.</p>
+
+<div class="u-container-dark-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<div class="o-flex">
+				<div class="o-flex--2 u-marginTop-s">
+					<button class="Button Button--ghost Button--l width-100">
+            <i class="material-icons md-14 u-pr-10">thumb_up</i>
+            <span>Like it</span>
+          </button>
+				</div>
+				<div class="o-flex--2 u-marginTop-s">
+					<button class="Button Button--ghost Button--l width-100">
+            <i class="material-icons md-14 u-pr-10">thumb_down</i>
+            <span>No Thanks</span>
+          </button>
+				</div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--ghost Button--m">
+        <i class="material-icons md-18 u-pr-10">file_download</i>
+        <span>Download PDF</span>
+      </button>
+		</div>
+	</div>
+</div>
+<!-- /Regular Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Regular Button --&gt;
+&lt;h4&gt;Button Sizes&lt;/h4&gt;
+
+&lt;p&gt;Define a regular secondary button with either of the following size modifiers &lt;code&gt;.Button--m&lt;/code&gt;, &lt;code&gt;.Button--l&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;u-container-dark-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;div class&#x3D;&quot;o-flex&quot;&gt;
+				&lt;div class&#x3D;&quot;o-flex--2 u-marginTop-s&quot;&gt;
+					&lt;button class&#x3D;&quot;Button Button--ghost Button--l width-100&quot;&gt;
+            &lt;i class&#x3D;&quot;material-icons md-14 u-pr-10&quot;&gt;thumb_up&lt;/i&gt;
+            &lt;span&gt;Like it&lt;/span&gt;
+          &lt;/button&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;o-flex--2 u-marginTop-s&quot;&gt;
+					&lt;button class&#x3D;&quot;Button Button--ghost Button--l width-100&quot;&gt;
+            &lt;i class&#x3D;&quot;material-icons md-14 u-pr-10&quot;&gt;thumb_down&lt;/i&gt;
+            &lt;span&gt;No Thanks&lt;/span&gt;
+          &lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--ghost Button--m&quot;&gt;
+        &lt;i class&#x3D;&quot;material-icons md-18 u-pr-10&quot;&gt;file_download&lt;/i&gt;
+        &lt;span&gt;Download PDF&lt;/span&gt;
+      &lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Regular Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.10-ghost-icon">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ghost Icon</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Icon buttons contrast primary buttons. Secondary buttons should be used to signify optional, infrequent or subtle actions <code>.is-disabled</code> can be used to disable a button.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Icon Button -->
+<h4>.Button--icon</h4>
+
+<div class="u-container-dark-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-l">
+			<button class="Icon Icon--s Button Button--ghost"><i class="material-icons md-14">thumb_up</i></button>
+			<button class="Icon Icon--s Button Button--ghost Button--icon"><i class="material-icons md-14">thumb_down</i></button>
+			<button class="Icon Icon--s Button Button--ghost Button--icon"><i class="material-icons md-14">mail</i></button>
+			<button class="Icon Icon--s Button Button--ghost Button--icon"><i class="material-icons md-14">archive</i></button>
+			<button class="Icon Icon--s Button Button--ghost Button--icon"><i class="material-icons md-14">star</i></button>
+		</div>
+
+		<div class="u-marginBottom-l u-marginTop-s">
+			<button class="Icon is-pressed Icon--s Button Button--ghost Button--icon"><i class="material-icons md-14 ainBlue">star</i></button>
+		</div>
+
+		<div class="u-marginBottom-l u-marginTop-s">
+			<button class="Icon Icon--m Button Button--ghost"><i class="material-icons md-18">share</i></button>
+			<button class="Icon Icon--m Button Button--ghost Button--icon"><i class="material-icons md-18">star</i></button>
+			<button class="Icon Icon--m Button Button--ghost Button--icon"><i class="material-icons md-18">mail</i></button>
+		</div>
+
+		<div>
+			<button class="Icon Icon--l Button Button--ghost"><i class="material-icons md-24">star</i></button>
+		</div>
+	</div>
+</div>
+<!-- /Icon Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Icon Button --&gt;
+&lt;h4&gt;.Button--icon&lt;/h4&gt;
+
+&lt;div class&#x3D;&quot;u-container-dark-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-l&quot;&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--ghost&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;thumb_up&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--ghost Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;thumb_down&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--ghost Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;mail&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--ghost Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;archive&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--s Button Button--ghost Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14&quot;&gt;star&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;u-marginBottom-l u-marginTop-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Icon is-pressed Icon--s Button Button--ghost Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-14 ainBlue&quot;&gt;star&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;u-marginBottom-l u-marginTop-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--m Button Button--ghost&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--m Button Button--ghost Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;star&lt;/i&gt;&lt;/button&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--m Button Button--ghost Button--icon&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;mail&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;div&gt;
+			&lt;button class&#x3D;&quot;Icon Icon--l Button Button--ghost&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-24&quot;&gt;star&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Icon Button --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.11-UI-regular">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ui Regular</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>UI buttons are used for the main actions which we want our users to take. Use them sparingly, to draw attention to the most important actions. A primary buttons should not be used alongside another primary button. Use the <code>Button</code> class followed by <code>Button--primary</code>.  To disable a button use <code>.is-disabled</code>.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Primary Regular Button -->
+<h4>Button Sizes</h4>
+
+<p>Define a regular primary button with either of the following size modifiers <code>.Button--s</code>, <code>.Button--m</code>, <code>.Button--l</code>. The <code>.with-100</code> modifier can be used when a button needs to span the full width of it's container.
+	An example of this would be in a modal.</p>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<button class="Button Button--positive Button--m">Add</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--negative Button--m">Delete</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--positive Button--s">Add Booster</button>
+		</div>
+		<div class="u-marginBottom-s">
+			<button class="Button Button--negative Button--s">Delete</button>
+		</div>
+		<div>
+			<div>
+				<button class="Button Button--negative Button--s is-disabled">Delete</button>
+			</div>
+		</div>
+	</div>
+	<!-- /Primary Regular Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Primary Regular Button --&gt;
+&lt;h4&gt;Button Sizes&lt;/h4&gt;
+
+&lt;p&gt;Define a regular primary button with either of the following size modifiers &lt;code&gt;.Button--s&lt;/code&gt;, &lt;code&gt;.Button--m&lt;/code&gt;, &lt;code&gt;.Button--l&lt;/code&gt;. The &lt;code&gt;.with-100&lt;/code&gt; modifier can be used when a button needs to span the full width of it&#x27;s container.
+	An example of this would be in a modal.&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--positive Button--m&quot;&gt;Add&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--negative Button--m&quot;&gt;Delete&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--positive Button--s&quot;&gt;Add Booster&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;button class&#x3D;&quot;Button Button--negative Button--s&quot;&gt;Delete&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;div&gt;
+				&lt;button class&#x3D;&quot;Button Button--negative Button--s is-disabled&quot;&gt;Delete&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /Primary Regular Button --&gt;</code></pre>
 </div>
 
 		</div>
@@ -607,6 +1288,8 @@
 	<script src="https://use.typekit.net/ooy8rss.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
   <!-- /Myriad pro typeface scripts -->
+
+
 
 </body>
 </html>
