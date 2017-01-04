@@ -29,13 +29,14 @@ $font-size-large: 1.25rem; // 20px
 $font-size-larger: 1.5rem; // 24px
 $font-size-big: 1.75rem; // 28px
 $font-size-bigger: 2.25rem; // 36px
-$font-size-huge: 4rem; // 64px
+$font-size-huge: 3rem; // 48px
 
 /**
  * Font weights
  */
 
 $font-weight-default: 400;
+$font-weight-medium: 600;
 $font-weight-bold: 800;
 
 /**
@@ -44,3 +45,4 @@ $font-weight-bold: 800;
 
 $line-height-tight: 1.25rem;
 $line-height-default: 1.5rem;
+$line-height-loose: 3rem;
