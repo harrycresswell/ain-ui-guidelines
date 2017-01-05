@@ -33,6 +33,10 @@ body {
 	z-index: 0;
 	min-height: 100vh;
 
+	@media (min-width: 30em) {
+		padding: 0 6em;
+	}
+
 	.f-menu-active & {
 		transform: translate($menu-width, 0);
 
