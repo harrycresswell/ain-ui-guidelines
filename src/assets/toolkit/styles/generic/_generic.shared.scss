@@ -8,6 +8,6 @@ pre {
     margin-bottom: $spacing-unit-big;
 }
 
-button:focus {
+button:focus, textarea {
   outline: none;
 }
