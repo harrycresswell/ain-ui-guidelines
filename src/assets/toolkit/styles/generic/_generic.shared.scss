@@ -7,3 +7,7 @@ fieldset, figure,
 pre {
     margin-bottom: $spacing-unit-big;
 }
+
+button:focus {
+  outline: none;
+}
