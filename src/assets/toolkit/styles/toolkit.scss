@@ -22,7 +22,10 @@
 @import 'objects/objects.layout';
 @import 'objects/objects.media';
 
-@import 'components/atoms/components.buttons';
+@import 'components/atoms/components.button';
+@import 'components/atoms/components.avatar';
+@import 'components/atoms/components.input';
+@import 'components/atoms/components.textarea';
 
 @import 'trumps/trumps.containers';
 @import 'trumps/trumps.links';
