@@ -1,0 +1,59 @@
+/**
+ * Component Modifier (based on .Select): Select Groups
+ */
+
+.Select-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+ }
+
+.Select-group__addon {
+  background-color: $color-grey-lighter;
+  border: 1px solid $color-grey-cooler;
+  border-radius: $radius-default;
+  color: $color-dark-light;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Select-group__addon:not(:first-child) {
+  border-left: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.Select-group__addon:not(:last-child) {
+  border-right: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.Select-group .Select:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.Select-group .Select:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/**
+* Component Modifier: Input Group Sizes
+*/
+
+.Select-group--l {
+	font-size: $font-size-default;
+}
+
+.Select-group--m {
+  font-size: $font-size-small;
+}
+
+.Select-group--s {
+	font-size: $font-size-smaller;
+}

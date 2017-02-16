@@ -1,0 +1,66 @@
+---
+notes: |
+  Avatars display an image if the user has uploaded one but if not, initials are shown instead. The background color is chosen randomly for each user and can be set inline on <code>.Avatar</code>. The image URL is set inline on <code>.Avatar--img</code>. Additionally, each avatar should have a <code>title</code> attribute with the user's name.
+---
+
+<h4>Basic Structure</h4>
+
+<div class="u-container-white-border u-marginBottom-l">
+  <div class="u-padding-l">
+    <div class="u-marginBottom-s">
+        <!-- Medium -->
+        <div class="Avatar Avatar--square Avatar--m" style="background: #556BCC;" title="Tribely">
+            <div class="Avatar--initials">T</div>
+            <div class="Avatar--img Avatar--square" style="background-image: url('assets/toolkit/images/tribely.png')"></div>
+        </div>
+    </div>
+    <div class="u-marginBottom-s">
+        <!-- Medium -->
+        <div class="Avatar Avatar--square Avatar--m" style="background: #556BCC;" title="Tribely">
+            <div class="Avatar--initials">T</div>
+            <div class="Avatar--img"></div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- /Square Avatar -->
+
+<!-- Square Avatar -->
+<h4>Avatar Sizes</h4>
+
+<p>Square avatars are used for company logos. There are 4 different sizes you can use <code>.Avatar--s</code>, <code>.Avatar--m</code>, <code>.Avatar--l</code>, <code>.Avatar--xl</code>.</p>
+<div class="u-container-white-border u-marginBottom-s">
+  <div class="u-padding-l">
+    <div class="u-marginBottom-s">
+        <!-- Extra Large -->
+        <div class="Avatar Avatar--square Avatar--xl" style="background: #556BCC;" title="Tribely">
+            <div class="Avatar--initials">T</div>
+        </div>
+    </div>
+    <div class="u-marginBottom-s">
+        <!-- Large -->
+        <div class="Avatar Avatar--square Avatar--l" style="background: #31708F;" title="Tribely">
+            <div class="Avatar--initials">T</div>
+        </div>
+    </div>
+    <div class="u-marginBottom-s">
+      <!-- Medium -->
+        <div class="Avatar Avatar--square Avatar--m" style="background: #55A0CC;" title="Tribely">
+            <div class="Avatar--initials">T</div>
+        </div>
+    </div>
+    <div class="u-marginBottom-s">
+      <!-- Small -->
+      <div class="Avatar Avatar--square Avatar--s" style="background: #55C6CC;" title="Tribely">
+          <div class="Avatar--initials">T</div>
+      </div>
+    </div>
+    <div>
+      <!-- Extra Small -->
+      <div class="Avatar Avatar--square Avatar--xs" style="background: #2D72EB;" title="Tribely">
+          <div class="Avatar--initials">T</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Square Avatar -->

@@ -1,0 +1,43 @@
+/*
+Component: Core Alert
+*/
+
+.Alert {
+  border-radius: $radius-default;
+  font-size: $font-size-small;
+  padding: $spacing-unit-default;
+  width: 100%;
+}
+
+/*
+Component Modifier: Avatar Shapes
+*/
+
+.Alert--info {
+  color: $color-ain;
+  background: lighten($color-ain, 32%);
+}
+
+.Alert--warning {
+  color: $color-warning;
+  background: lighten($color-warning, 36%);
+}
+
+.Alert--danger {
+  color: $color-negative;
+  background: lighten($color-negative, 30%);
+}
+
+.Alert--success {
+  color: $color-positive;
+  background: lighten($color-positive, 50%);
+}
+
+/**
+ * Component Modifier: Ghost Theme
+ */
+
+.Alert--ghost {
+  color: $color-white;
+  background-color: rgba(255, 255, 255, 0.15);
+}

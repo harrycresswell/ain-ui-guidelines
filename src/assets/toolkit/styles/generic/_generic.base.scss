@@ -87,4 +87,10 @@ input[type="submit"] {
   cursor: pointer; /* 2 */
 }
 
+button {
+  border: 0;
+  padding: 0;
+}
+
+
 /* stylelint-enable selector-no-qualifying-type */

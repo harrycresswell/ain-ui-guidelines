@@ -1,0 +1,108 @@
+/*
+Component: Core input type radio
+*/
+
+input[type="radio"] {
+  outline-style: none;
+}
+
+.Control {
+	position: relative;
+	display: inline-block;
+	padding: 0px 10px 0 30px;
+	cursor: pointer;
+}
+
+.Control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.Control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px #e0e6ed;
+
+}
+
+.Control--radio .Control__indicator {
+	border-radius: 50%;
+}
+
+/* Hover state */
+.Control:hover input ~ .Control__indicator {
+	box-shadow: inset 0 0 0 1px #c0ccda;
+}
+
+/* Focus state */
+.Control input:focus ~ .Control__indicator {
+  box-shadow: inset 0 0 0 1px #c0ccda;
+}
+
+/* Checked state */
+.Control input:checked ~ .Control__indicator {
+	background: $color-ain;
+  box-shadow: inset 0 0 0 1px #4a8cff;
+}
+
+/* Hover state whilst checked */
+.Control:hover input:not([disabled]):checked ~ .control__indicator,
+.Control input:checked:focus ~ .Control__indicator {
+	background: #4a8cff;
+}
+
+/* Disabled state */
+.Control input:disabled ~ .Control__indicator {
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+  box-shadow: none;
+}
+
+/* Check mark */
+.Control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.Control input:checked ~ .Control__indicator:after {
+	display: block;
+}
+
+/* Checkbox tick */
+.Control--checkbox .Control__indicator:after {
+	top: 4px;
+	left: 8px;
+	width: 5px;
+	height: 10px;
+	transform: rotate(45deg);
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.Control--checkbox input:disabled ~ .Control__indicator:after {
+	border-color: #7b7b7b;
+}
+
+/* Radio button inner circle */
+.Control--radio .Control__indicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+/* Disabled circle colour */
+.Control--radio input:disabled ~ .Control__indicator:after {
+	background: #7b7b7b;
+}

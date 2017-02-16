@@ -1,17 +1,15 @@
-/* Form styles */
+/*
+Component: Core Form Input
+*/
 
-input[type="text"],
-input[type="password"],
-textarea {
+.Input, input[type="text"],
+input[type="password"] {
   width: 100%;
+  border-radius: $radius-default;
   padding: 12px 20px;
-  margin: 8px 0;
-  border-radius: 4px;
   box-sizing: border-box;
   box-shadow: inset 0 0 0 1px #e0e6ed;
-  font-size: 16px;
   outline-style: none;
-  min-height: 50px;
   vertical-align: middle;
   -webkit-transition-property: all;
   transition-property: all;
@@ -24,56 +22,91 @@ textarea {
 
 }
 
-input[type="text"] {
-
-}
-
-input[type="radio"] {
-  outline-style: none;
-}
-
 input[type="password"] {
   -webkit-text-security: disc;
 
 }
 
-::-webkit-input-placeholder {
-   color: #B4C3D3;
-	 font-size: 16px;
+/**
+ * Component Modifier: Default Theme
+ */
+
+ //.Input--default {}
+
+.Input--default::-webkit-input-placeholder {
+  color: #B4C3D3;
 	letter-spacing: 0px;
 	vertical-align: middle;
-		 line-height: 16px;
+	line-height: 16px;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #B4C3D3;
-	 font-size: 16px;
-	 letter-spacing: 0px;
-	 	vertical-align: middle;
-			 line-height: 16px;
-}
-
-:-ms-input-placeholder {
-   color: #B4C3D3;
-	 font-size: 16px;
-	 letter-spacing: 0px;
+.Input--default::-moz-placeholder {  /* Firefox 19+ */
+  color: #B4C3D3;
+	letter-spacing: 0px;
 	vertical-align: middle;
-		 line-height: 16px;
+	line-height: 16px;
 }
 
-input[type="text"]:hover,
-input[type="password"]:hover {
+.Input--default:-ms-input-placeholder {
+  color: #B4C3D3;
+	letter-spacing: 0px;
+	vertical-align: middle;
+	line-height: 16px;
+}
+
+input[type="text"].Input--default:hover,
+input[type="password"].Input--default:hover,
+input[type="search"].Input--default:hover {
 	box-shadow: inset 0 0 0 1px #c0ccda;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="text"].Input--default:focus,
+input[type="password"].Input--default:focus,
+input[type="search"].Input--default:focus {
   box-shadow: inset 0 0 0 1px #4a8cff;
 }
 
-.input--l {
-  padding: 0 16px;
-	font-size: 16px;
-	border-radius: 4px;
+/**
+ * Component Modifier: Input Sizes
+ */
+
+.Input--l {
+	font-size: $font-size-small;
 	height: 50px;
+}
+
+.Input--m {
+	font-size: $font-size-smaller;
+	height: 40px;
+}
+
+.Input--s {
+	font-size: $font-size-smaller;
+	height: 30px;
+}
+
+/**
+ * Component Modifier: Ghost Theme
+ */
+
+
+
+ /**
+  * Component Modifier: Input hints
+  */
+
+.Input.has-danger {
+   border: solid 1px $color-negative;
+}
+
+.Input.has-success {
+  border: solid 1px $color-positive;
+}
+
+.Input-hint--danger {
+  color: $color-negative;
+}
+
+.Input-hint--success {
+  color: $color-positive;
 }

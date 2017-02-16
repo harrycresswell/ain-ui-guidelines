@@ -22,10 +22,24 @@
 @import 'objects/objects.layout';
 @import 'objects/objects.media';
 
+@import 'components/atoms/components.alert';
 @import 'components/atoms/components.button';
 @import 'components/atoms/components.avatar';
 @import 'components/atoms/components.input';
+@import 'components/atoms/components.input-group';
+@import 'components/atoms/components.input-search';
+@import 'components/atoms/components.input-file';
+@import 'components/atoms/components.input-range';
 @import 'components/atoms/components.textarea';
+@import 'components/atoms/components.select';
+@import 'components/atoms/components.select-group';
+@import 'components/atoms/components.table';
+@import 'components/atoms/components.checkbox-radio';
+@import 'components/atoms/components.label';
+@import 'components/atoms/components.loading';
+@import 'components/atoms/components.form';
+@import 'components/atoms/components.tag';
+
 
 @import 'trumps/trumps.containers';
 @import 'trumps/trumps.links';

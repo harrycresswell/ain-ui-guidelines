@@ -1,0 +1,66 @@
+---
+notes: |
+  Avatars display an image if the user has uploaded one but if not, initials are shown instead. The background color is chosen randomly for each user and can be set inline on <code>.Avatar</code>. The image URL is set inline on <code>.Avatar--img</code>. Additionally, each avatar should have a <code>title</code> attribute with the user's name.
+---
+<!-- Round Avatar -->
+<h4>Basic Structure</h4>
+
+<div class="u-container-white-border u-marginBottom-l">
+  <div class="u-padding-l">
+    <div class="u-marginBottom-s">
+        <!-- Medium -->
+        <div class="Avatar Avatar--round Avatar--m" style="background: #556BCC;" title="Harry Cresswell">
+            <div class="Avatar--initials">HC</div>
+            <div class="Avatar--img Avatar--round" style="background-image: url('assets/toolkit/images/hc.jpg')"></div>
+        </div>
+    </div>
+    <div class="u-marginBottom-s">
+        <!-- Medium -->
+        <div class="Avatar Avatar--round Avatar--m" style="background: #556BCC;" title="Harry Cresswell">
+            <div class="Avatar--initials">HC</div>
+            <div class="Avatar--img"></div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- /Round Avatar -->
+
+<!-- Round Avatar -->
+<h4>Avatar Sizes</h4>
+
+<p>Round avatars are used for user profiles. There are 4 different sizes you can use <code>.Avatar--s</code>, <code>.Avatar--m</code>, <code>.Avatar--l</code>, <code>.Avatar--xl</code>.</p>
+<div class="u-container-white-border u-marginBottom-s">
+  <div class="u-padding-l">
+    <div class="u-marginBottom-s">
+        <!-- Extra Large -->
+        <div class="Avatar Avatar--round Avatar--xl" style="background: #556BCC;" title="Harry Cresswell">
+            <div class="Avatar--initials">HC</div>
+        </div>
+    </div>
+    <div class="u-marginBottom-s">
+        <!-- Large -->
+        <div class="Avatar Avatar--round Avatar--l" style="background: #31708F;" title="Harry Cresswell">
+            <div class="Avatar--initials">HC</div>
+        </div>
+    </div>
+    <div class="u-marginBottom-s">
+      <!-- Medium -->
+        <div class="Avatar Avatar--round Avatar--m" style="background: #55A0CC;" title="Harry Cresswell">
+            <div class="Avatar--initials">HC</div>
+        </div>
+    </div>
+    <div class="u-marginBottom-s">
+      <!-- Small -->
+      <div class="Avatar Avatar--round Avatar--s" style="background: #55C6CC;" title="Harry Cresswell">
+          <div class="Avatar--initials">HC</div>
+      </div>
+    </div>
+    <div>
+      <!-- Extra Small -->
+      <div class="Avatar Avatar--round Avatar--xs" style="background: #2D72EB;" title="Harry Cresswell">
+          <div class="Avatar--initials">HC</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Square Avatar -->

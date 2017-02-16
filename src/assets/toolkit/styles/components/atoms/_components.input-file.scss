@@ -1,0 +1,17 @@
+/*
+Component: Core file input (no need to use Input before hand)
+*/
+
+input[type="file"] {
+  display: none;
+}
+
+[data-file]:after {
+  content: attr(data-file);
+	display: inline-block;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: $font-size-small;
+	margin-left: $spacing-unit-small / 2;
+	color: $color-dark-mid;
+}

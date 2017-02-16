@@ -1,0 +1,59 @@
+/**
+ * Component Modifier (based on .Input): Input Groups
+ */
+
+.Input-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+ }
+
+.Input-group__addon {
+  background-color: $color-grey-lighter;
+  border: 1px solid $color-grey-cooler;
+  border-radius: $radius-default;
+  color: $color-dark-light;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Input-group__addon:not(:first-child) {
+  border-left: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.Input-group__addon:not(:last-child) {
+  border-right: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.Input-group .Input:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.Input-group .Input:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/**
+* Component Modifier: Input Group Sizes
+*/
+
+.Input-group--l {
+	font-size: $font-size-default;
+}
+
+.Input-group--m {
+  font-size: $font-size-small;
+}
+
+.Input-group--s {
+	font-size: $font-size-smaller;
+}

@@ -1,0 +1,50 @@
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.Table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.Table.Table-striped tbody tr:nth-of-type(odd) {
+    background: #fcfcfc;
+}
+
+.Table th, .Table td {
+    border-bottom: .1rem solid #efefef;
+    padding: 1.5rem 1rem;
+}
+
+.Tabel.label {
+    background: #efefef;
+    border-radius: .2rem;
+    color: #666;
+    font-size: .95em;
+    padding: .1em .3em;
+    vertical-align: baseline;
+    white-space: nowrap;
+}

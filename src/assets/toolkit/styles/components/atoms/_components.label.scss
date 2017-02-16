@@ -1,0 +1,44 @@
+/*
+Component: Core Alert
+*/
+
+.Label {
+  border-radius: 2px;
+  color: $color-white;
+  font-size: $font-size-smaller;
+  padding: 0 15px;
+}
+
+/*
+Component Modifier: Avatar Shapes
+*/
+
+.Label--default {
+  color: $color-dark-mid;
+  background: $color-grey-light;
+}
+
+.Label--info {
+  background: $color-ain;
+}
+
+.Label--warning {
+  background: $color-warning;
+}
+
+.Label--danger {
+  background: $color-negative;
+}
+
+.Label--success {
+  background: $color-positive;
+}
+
+/**
+ * Component Modifier: Ghost Theme
+ */
+
+.Alert--ghost {
+  color: $color-white;
+  background-color: rgba(255, 255, 255, 0.15);
+}

@@ -71,34 +71,34 @@
 					<a href="components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
+							<a href="components.html#alerts">Alerts</a>
+						</li>
+						<li>
+							<a href="components.html#avatars">Avatars</a>
+						</li>
+						<li>
 							<a href="components.html#button">Button</a>
 						</li>
 						<li>
 							<a href="components.html#button-group">Button Group</a>
 						</li>
 						<li>
-							<a href="components.html#checkbox">Checkbox</a>
+							<a href="components.html#forms">Forms</a>
+						</li>
+						<li>
+							<a href="components.html#labels">Labels</a>
 						</li>
 						<li>
 							<a href="components.html#lists">Lists</a>
 						</li>
 						<li>
+							<a href="components.html#loading">Loading</a>
+						</li>
+						<li>
 							<a href="components.html#paragraph">Paragraph</a>
 						</li>
 						<li>
-							<a href="components.html#radio">Radio</a>
-						</li>
-						<li>
-							<a href="components.html#select">Select</a>
-						</li>
-						<li>
 							<a href="components.html#table">Table</a>
-						</li>
-						<li>
-							<a href="components.html#text-input">Text Input</a>
-						</li>
-						<li>
-							<a href="components.html#textarea">Textarea</a>
 						</li>
 					</ul>
 				</li>
@@ -157,6 +157,453 @@
 
 	
 <h1 data-f-toggle="labels">Components</h1>
+
+
+<div class="f-item-group" id="alerts">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Alerts</h2>
+	</div>
+		<div class="f-item-group" id="alerts.01-default-alert">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Default Alert</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Alerts can be used when you need to give more information to the user based on their action or before they take an action. Use <code>.Alert</code> followed by the specific alert modifier. You can use <code>Alert--info</code>, <code>Alert--warning</code>, <code>Alert--error</code>, or <code>Alert--success</code>. If you need to show an alert on a themed background then use the <code>Alert--ghost</code> modifier.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="">
+			<div class="Alert Alert--info">This is <a class="u-link-natural" href="#">an info alert</a>. Use it for displaying information.</div>
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Alert Alert--warning">This is <a class="u-link-natural" href="#">a warning alert</a>. Use it to warn the user of an action.</div>
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Alert Alert--danger">This is <a class="u-link-natural" href="#">an error alert</a>. Use it to indicate an error made by the user.</div>
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Alert Alert--success">This is <a class="u-link-natural" href="#">a success alert</a>. Use it to indicate a successful action taken by the user.</div>
+		</div>
+	</div>
+	<!--/.u-padding-l -->
+</div>
+<!--/.u-container-white-border -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;&quot;&gt;
+			&lt;div class&#x3D;&quot;Alert Alert--info&quot;&gt;This is &lt;a class&#x3D;&quot;u-link-natural&quot; href&#x3D;&quot;#&quot;&gt;an info alert&lt;/a&gt;. Use it for displaying information.&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Alert Alert--warning&quot;&gt;This is &lt;a class&#x3D;&quot;u-link-natural&quot; href&#x3D;&quot;#&quot;&gt;a warning alert&lt;/a&gt;. Use it to warn the user of an action.&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Alert Alert--danger&quot;&gt;This is &lt;a class&#x3D;&quot;u-link-natural&quot; href&#x3D;&quot;#&quot;&gt;an error alert&lt;/a&gt;. Use it to indicate an error made by the user.&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Alert Alert--success&quot;&gt;This is &lt;a class&#x3D;&quot;u-link-natural&quot; href&#x3D;&quot;#&quot;&gt;a success alert&lt;/a&gt;. Use it to indicate a successful action taken by the user.&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!--/.u-padding-l --&gt;
+&lt;/div&gt;
+&lt;!--/.u-container-white-border --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="alerts.02-ghost-alert">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ghost Alert</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<!-- Ghost Alert -->
+<div class="u-container-dark-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="">
+			<div class="Alert Alert--ghost">This is <a class="u-link-natural" href="#">an ghost alert</a>. Use it for displaying information.</div>
+		</div>
+	</div>
+</div>
+<!-- /Ghost Alert -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Ghost Alert --&gt;
+&lt;div class&#x3D;&quot;u-container-dark-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;&quot;&gt;
+			&lt;div class&#x3D;&quot;Alert Alert--ghost&quot;&gt;This is &lt;a class&#x3D;&quot;u-link-natural&quot; href&#x3D;&quot;#&quot;&gt;an ghost alert&lt;/a&gt;. Use it for displaying information.&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Ghost Alert --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="alerts.03-theme-blue-alert">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Theme Blue Alert</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<!-- Alert Theme Blue -->
+<div class="u-container-blue u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="">
+			<div class="Alert Alert--ghost">This is <a class="u-link-natural" href="#">a theme alert</a>. It's actually the same as the ghost alert except the background colour is different. Use it for displaying information.</div>
+		</div>
+	</div>
+</div>
+<!-- /Alert Theme Blue -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Alert Theme Blue --&gt;
+&lt;div class&#x3D;&quot;u-container-blue u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;&quot;&gt;
+			&lt;div class&#x3D;&quot;Alert Alert--ghost&quot;&gt;This is &lt;a class&#x3D;&quot;u-link-natural&quot; href&#x3D;&quot;#&quot;&gt;a theme alert&lt;/a&gt;. It&#x27;s actually the same as the ghost alert except the background colour is different. Use it for displaying information.&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Alert Theme Blue --&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="avatars">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Avatars</h2>
+	</div>
+		<div class="f-item-group" id="avatars.01-avatar-square">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Avatar Square</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Avatars display an image if the user has uploaded one but if not, initials are shown instead. The background color is chosen randomly for each user and can be set inline on <code>.Avatar</code>. The image URL is set inline on <code>.Avatar--img</code>. Additionally, each avatar should have a <code>title</code> attribute with the user's name.</p>
+
+</div>
+<div class="f-item-preview">
+	<h4>Basic Structure</h4>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<!-- Medium -->
+			<div class="Avatar Avatar--square Avatar--m" style="background: #556BCC;" title="Tribely">
+				<div class="Avatar--initials">T</div>
+				<div class="Avatar--img Avatar--square" style="background-image: url('assets/toolkit/images/tribely.png')"></div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<!-- Medium -->
+			<div class="Avatar Avatar--square Avatar--m" style="background: #556BCC;" title="Tribely">
+				<div class="Avatar--initials">T</div>
+				<div class="Avatar--img"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Square Avatar -->
+
+<!-- Square Avatar -->
+<h4>Avatar Sizes</h4>
+
+<p>Square avatars are used for company logos. There are 4 different sizes you can use <code>.Avatar--s</code>, <code>.Avatar--m</code>, <code>.Avatar--l</code>, <code>.Avatar--xl</code>.</p>
+<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<!-- Extra Large -->
+			<div class="Avatar Avatar--square Avatar--xl" style="background: #556BCC;" title="Tribely">
+				<div class="Avatar--initials">T</div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<!-- Large -->
+			<div class="Avatar Avatar--square Avatar--l" style="background: #31708F;" title="Tribely">
+				<div class="Avatar--initials">T</div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<!-- Medium -->
+			<div class="Avatar Avatar--square Avatar--m" style="background: #55A0CC;" title="Tribely">
+				<div class="Avatar--initials">T</div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<!-- Small -->
+			<div class="Avatar Avatar--square Avatar--s" style="background: #55C6CC;" title="Tribely">
+				<div class="Avatar--initials">T</div>
+			</div>
+		</div>
+		<div>
+			<!-- Extra Small -->
+			<div class="Avatar Avatar--square Avatar--xs" style="background: #2D72EB;" title="Tribely">
+				<div class="Avatar--initials">T</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Square Avatar -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h4&gt;Basic Structure&lt;/h4&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Medium --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--square Avatar--m&quot; style&#x3D;&quot;background: #556BCC;&quot; title&#x3D;&quot;Tribely&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;T&lt;/div&gt;
+				&lt;div class&#x3D;&quot;Avatar--img Avatar--square&quot; style&#x3D;&quot;background-image: url(&#x27;assets/toolkit/images/tribely.png&#x27;)&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Medium --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--square Avatar--m&quot; style&#x3D;&quot;background: #556BCC;&quot; title&#x3D;&quot;Tribely&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;T&lt;/div&gt;
+				&lt;div class&#x3D;&quot;Avatar--img&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Square Avatar --&gt;
+
+&lt;!-- Square Avatar --&gt;
+&lt;h4&gt;Avatar Sizes&lt;/h4&gt;
+
+&lt;p&gt;Square avatars are used for company logos. There are 4 different sizes you can use &lt;code&gt;.Avatar--s&lt;/code&gt;, &lt;code&gt;.Avatar--m&lt;/code&gt;, &lt;code&gt;.Avatar--l&lt;/code&gt;, &lt;code&gt;.Avatar--xl&lt;/code&gt;.&lt;/p&gt;
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Extra Large --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--square Avatar--xl&quot; style&#x3D;&quot;background: #556BCC;&quot; title&#x3D;&quot;Tribely&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;T&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Large --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--square Avatar--l&quot; style&#x3D;&quot;background: #31708F;&quot; title&#x3D;&quot;Tribely&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;T&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Medium --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--square Avatar--m&quot; style&#x3D;&quot;background: #55A0CC;&quot; title&#x3D;&quot;Tribely&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;T&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Small --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--square Avatar--s&quot; style&#x3D;&quot;background: #55C6CC;&quot; title&#x3D;&quot;Tribely&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;T&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;!-- Extra Small --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--square Avatar--xs&quot; style&#x3D;&quot;background: #2D72EB;&quot; title&#x3D;&quot;Tribely&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;T&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Square Avatar --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="avatars.02-avatar-round">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Avatar Round</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Avatars display an image if the user has uploaded one but if not, initials are shown instead. The background color is chosen randomly for each user and can be set inline on <code>.Avatar</code>. The image URL is set inline on <code>.Avatar--img</code>. Additionally, each avatar should have a <code>title</code> attribute with the user's name.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Round Avatar -->
+<h4>Basic Structure</h4>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<!-- Medium -->
+			<div class="Avatar Avatar--round Avatar--m" style="background: #556BCC;" title="Harry Cresswell">
+				<div class="Avatar--initials">HC</div>
+				<div class="Avatar--img Avatar--round" style="background-image: url('assets/toolkit/images/hc.jpg')"></div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<!-- Medium -->
+			<div class="Avatar Avatar--round Avatar--m" style="background: #556BCC;" title="Harry Cresswell">
+				<div class="Avatar--initials">HC</div>
+				<div class="Avatar--img"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Round Avatar -->
+
+<!-- Round Avatar -->
+<h4>Avatar Sizes</h4>
+
+<p>Round avatars are used for user profiles. There are 4 different sizes you can use <code>.Avatar--s</code>, <code>.Avatar--m</code>, <code>.Avatar--l</code>, <code>.Avatar--xl</code>.</p>
+<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="u-marginBottom-s">
+			<!-- Extra Large -->
+			<div class="Avatar Avatar--round Avatar--xl" style="background: #556BCC;" title="Harry Cresswell">
+				<div class="Avatar--initials">HC</div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<!-- Large -->
+			<div class="Avatar Avatar--round Avatar--l" style="background: #31708F;" title="Harry Cresswell">
+				<div class="Avatar--initials">HC</div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<!-- Medium -->
+			<div class="Avatar Avatar--round Avatar--m" style="background: #55A0CC;" title="Harry Cresswell">
+				<div class="Avatar--initials">HC</div>
+			</div>
+		</div>
+		<div class="u-marginBottom-s">
+			<!-- Small -->
+			<div class="Avatar Avatar--round Avatar--s" style="background: #55C6CC;" title="Harry Cresswell">
+				<div class="Avatar--initials">HC</div>
+			</div>
+		</div>
+		<div>
+			<!-- Extra Small -->
+			<div class="Avatar Avatar--round Avatar--xs" style="background: #2D72EB;" title="Harry Cresswell">
+				<div class="Avatar--initials">HC</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Square Avatar -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Round Avatar --&gt;
+&lt;h4&gt;Basic Structure&lt;/h4&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Medium --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--round Avatar--m&quot; style&#x3D;&quot;background: #556BCC;&quot; title&#x3D;&quot;Harry Cresswell&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;HC&lt;/div&gt;
+				&lt;div class&#x3D;&quot;Avatar--img Avatar--round&quot; style&#x3D;&quot;background-image: url(&#x27;assets/toolkit/images/hc.jpg&#x27;)&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Medium --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--round Avatar--m&quot; style&#x3D;&quot;background: #556BCC;&quot; title&#x3D;&quot;Harry Cresswell&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;HC&lt;/div&gt;
+				&lt;div class&#x3D;&quot;Avatar--img&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Round Avatar --&gt;
+
+&lt;!-- Round Avatar --&gt;
+&lt;h4&gt;Avatar Sizes&lt;/h4&gt;
+
+&lt;p&gt;Round avatars are used for user profiles. There are 4 different sizes you can use &lt;code&gt;.Avatar--s&lt;/code&gt;, &lt;code&gt;.Avatar--m&lt;/code&gt;, &lt;code&gt;.Avatar--l&lt;/code&gt;, &lt;code&gt;.Avatar--xl&lt;/code&gt;.&lt;/p&gt;
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Extra Large --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--round Avatar--xl&quot; style&#x3D;&quot;background: #556BCC;&quot; title&#x3D;&quot;Harry Cresswell&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;HC&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Large --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--round Avatar--l&quot; style&#x3D;&quot;background: #31708F;&quot; title&#x3D;&quot;Harry Cresswell&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;HC&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Medium --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--round Avatar--m&quot; style&#x3D;&quot;background: #55A0CC;&quot; title&#x3D;&quot;Harry Cresswell&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;HC&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+			&lt;!-- Small --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--round Avatar--s&quot; style&#x3D;&quot;background: #55C6CC;&quot; title&#x3D;&quot;Harry Cresswell&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;HC&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;!-- Extra Small --&gt;
+			&lt;div class&#x3D;&quot;Avatar Avatar--round Avatar--xs&quot; style&#x3D;&quot;background: #2D72EB;&quot; title&#x3D;&quot;Harry Cresswell&quot;&gt;
+				&lt;div class&#x3D;&quot;Avatar--initials&quot;&gt;HC&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Square Avatar --&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
 
 
 <div class="f-item-group" id="button">
@@ -1039,6 +1486,89 @@
 </div>
 
 		</div>
+		<div class="f-item-group" id="button.14-primary-link">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Primary Link</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Primary links are used when you need to put another button inline next to a primary button. An example would be when you need a cancel link next to a primary submit button on a form.</p>
+
+</div>
+<div class="f-item-preview">
+	<p>Use `Button` followed by `Button-link`, followed by one of the size modifiers below.</p>
+
+<div class="u-container-white-border u-marginBottom-l">
+	<div class="u-padding-l">
+		<button class="Button Button--primary Button--s">Submit</button>
+		<button class="Button Button-link Button--s">Cancel</button>
+	</div>
+</div>
+<!-- /Primary Regular Button -->
+
+<!-- Primary Regular Button -->
+<h4>Button Sizes</h4>
+
+<p>Define a regular primary link with either of the following size modifiers <code>.Button--s</code>, <code>.Button--m</code>, <code>.Button--l</code>.
+
+	<div class="u-container-white-border u-marginBottom-s">
+		<div class="u-padding-l">
+			<div class="">
+				<button class="Button Button-link Button--l">Cancel</button>
+			</div>
+			<div class="u-marginBottom-s">
+				<button class="Button Button-link Button--m">Cancel</button>
+			</div>
+			<div class="u-marginBottom-s">
+				<button class="Button Button-link Button--s">Cancel</button>
+			</div>
+		</div>
+	</div>
+	<!-- /Primary Regular Button -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p&gt;Use &#x60;Button&#x60; followed by &#x60;Button-link&#x60;, followed by one of the size modifiers below.&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-l&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;button class&#x3D;&quot;Button Button--primary Button--s&quot;&gt;Submit&lt;/button&gt;
+		&lt;button class&#x3D;&quot;Button Button-link Button--s&quot;&gt;Cancel&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /Primary Regular Button --&gt;
+
+&lt;!-- Primary Regular Button --&gt;
+&lt;h4&gt;Button Sizes&lt;/h4&gt;
+
+&lt;p&gt;Define a regular primary link with either of the following size modifiers &lt;code&gt;.Button--s&lt;/code&gt;, &lt;code&gt;.Button--m&lt;/code&gt;, &lt;code&gt;.Button--l&lt;/code&gt;.
+
+	&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+		&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+			&lt;div class&#x3D;&quot;&quot;&gt;
+				&lt;button class&#x3D;&quot;Button Button-link Button--l&quot;&gt;Cancel&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+				&lt;button class&#x3D;&quot;Button Button-link Button--m&quot;&gt;Cancel&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+				&lt;button class&#x3D;&quot;Button Button-link Button--s&quot;&gt;Cancel&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /Primary Regular Button --&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
@@ -1127,10 +1657,932 @@
 </div>
 
 
-<div class="f-item-group" id="checkbox">
+<div class="f-item-group" id="forms">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Forms</h2>
+	</div>
+		<div class="f-item-group" id="forms.01-text-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Text Input</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<label for="textInput">Email Address</label>
+		<input class="Input Input--default Input--l" type="text" placeholder="Email address" id="textInput" />
+		<div class="u-marginTop-s">
+			<label for="textInput">Password</label>
+			<input class="Input Input--default Input--m" type="password" placeholder="Password" id="textInput" />
+		</div>
+		<div class="u-marginTop-s">
+			<label for="textInput">First name</label>
+			<input class="Input Input--default Input--s" type="text" placeholder="First Name" id="textInput" />
+		</div>
+	</div>
+	<!-- /.u-padding-l -->
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;label for&#x3D;&quot;textInput&quot;&gt;Email Address&lt;/label&gt;
+		&lt;input class&#x3D;&quot;Input Input--default Input--l&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Email address&quot; id&#x3D;&quot;textInput&quot; /&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-s&quot;&gt;
+			&lt;label for&#x3D;&quot;textInput&quot;&gt;Password&lt;/label&gt;
+			&lt;input class&#x3D;&quot;Input Input--default Input--m&quot; type&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Password&quot; id&#x3D;&quot;textInput&quot; /&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-s&quot;&gt;
+			&lt;label for&#x3D;&quot;textInput&quot;&gt;First name&lt;/label&gt;
+			&lt;input class&#x3D;&quot;Input Input--default Input--s&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;First Name&quot; id&#x3D;&quot;textInput&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /.u-padding-l --&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.02-text-input-groups">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Text Input Groups</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="Input-group Input-group--l">
+			<span class="Input-group__addon">$</span>
+			<input class="Input Input--default Input--l" type="text" placeholder="Enter Amount" id="textInput" />
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Input-group Input-group--m">
+				<span class="Input-group__addon">http://</span>
+				<input class="Input Input--default Input--m" type="text" placeholder="Enter URL" id="textInput" />
+			</div>
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Input-group Input-group--m">
+				<span class="Input-group__addon">1</span>
+				<input class="Input Input--default Input--m" type="text" placeholder="Enter Highlight" id="textInput" />
+			</div>
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Input-group Input-group--s">
+				<span class="Input-group__addon">£</span>
+				<input class="Input Input--default Input--s" type="text" placeholder="Enter Amount" id="textInput" />
+			</div>
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Input-group Input-group--m">
+				<span class="Input-group__addon">£</span>
+				<input class="Input Input--default Input--m" type="text" placeholder="Enter Amount" id="textInput" />
+				<span class="Input-group__addon">.00</span>
+			</div>
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Input-group Input-group--l">
+				<input class="Input Input--default Input--l" type="text" placeholder="Enter Amount" id="textInput" />
+				<span class="Input-group__addon">@slack.com</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.u-container-white-border -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;Input-group Input-group--l&quot;&gt;
+			&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;$&lt;/span&gt;
+			&lt;input class&#x3D;&quot;Input Input--default Input--l&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Enter Amount&quot; id&#x3D;&quot;textInput&quot; /&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Input-group Input-group--m&quot;&gt;
+				&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;http://&lt;/span&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--m&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Enter URL&quot; id&#x3D;&quot;textInput&quot; /&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Input-group Input-group--m&quot;&gt;
+				&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;1&lt;/span&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--m&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Enter Highlight&quot; id&#x3D;&quot;textInput&quot; /&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Input-group Input-group--s&quot;&gt;
+				&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;£&lt;/span&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--s&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Enter Amount&quot; id&#x3D;&quot;textInput&quot; /&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Input-group Input-group--m&quot;&gt;
+				&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;£&lt;/span&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--m&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Enter Amount&quot; id&#x3D;&quot;textInput&quot; /&gt;
+				&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;.00&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Input-group Input-group--l&quot;&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--l&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Enter Amount&quot; id&#x3D;&quot;textInput&quot; /&gt;
+				&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;@slack.com&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.u-container-white-border --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.03-textarea">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Textarea</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<label for="textArea">Description</label>
+		<textarea class="Textarea Textarea--default Textarea--l" name="" placeholder="Start typing..." id="textArea"></textarea>
+		<div class="u-marginTop-m">
+			<label for="textArea">Description</label>
+			<textarea class="Textarea Textarea--default Textarea--m" name="" placeholder="Start typing..." id="textArea"></textarea>
+		</div>
+		<div class="u-marginTop-m">
+			<label for="textArea">Description</label>
+			<textarea class="Textarea Textarea--default Textarea--s" name="" placeholder="Start typing..." id="textArea"></textarea>
+		</div>
+	</div>
+</div>
+<!-- /.u-container-white-border -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;label for&#x3D;&quot;textArea&quot;&gt;Description&lt;/label&gt;
+		&lt;textarea class&#x3D;&quot;Textarea Textarea--default Textarea--l&quot; name&#x3D;&quot;&quot; placeholder&#x3D;&quot;Start typing...&quot; id&#x3D;&quot;textArea&quot;&gt;&lt;/textarea&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;label for&#x3D;&quot;textArea&quot;&gt;Description&lt;/label&gt;
+			&lt;textarea class&#x3D;&quot;Textarea Textarea--default Textarea--m&quot; name&#x3D;&quot;&quot; placeholder&#x3D;&quot;Start typing...&quot; id&#x3D;&quot;textArea&quot;&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;label for&#x3D;&quot;textArea&quot;&gt;Description&lt;/label&gt;
+			&lt;textarea class&#x3D;&quot;Textarea Textarea--default Textarea--s&quot; name&#x3D;&quot;&quot; placeholder&#x3D;&quot;Start typing...&quot; id&#x3D;&quot;textArea&quot;&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.u-container-white-border --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.04-select">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Select</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="Select Select--default Select--l">
+			<select>
+      					<option value="">Option 1</option>
+      					<option value="">Option 2</option>
+      					<option value="">Option 3</option>
+      					<option value="">Option 4</option>
+      					<option value="">Option 5</option>
+    				</select>
+		</div>
+		<!-- /.Select -->
+		<div class="u-marginTop-m">
+			<div class="Select Select--default Select--m">
+				<select>
+          					<option value="">Option 1</option>
+          					<option value="">Option 2</option>
+          					<option value="">Option 3</option>
+          					<option value="">Option 4</option>
+          					<option value="">Option 5</option>
+        				</select>
+			</div>
+			<!-- /.Select -->
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Select Select--default Select--s">
+				<select>
+          					<option value="">Option 1</option>
+          					<option value="">Option 2</option>
+          					<option value="">Option 3</option>
+          					<option value="">Option 4</option>
+          					<option value="">Option 5</option>
+        				</select>
+			</div>
+			<!-- /.Select -->
+		</div>
+	</div>
+</div>
+<!-- /.u-container-white-border -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;Select Select--default Select--l&quot;&gt;
+			&lt;select&gt;
+      					&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+      					&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+      					&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+      					&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+      					&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+    				&lt;/select&gt;
+		&lt;/div&gt;
+		&lt;!-- /.Select --&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Select Select--default Select--m&quot;&gt;
+				&lt;select&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+        				&lt;/select&gt;
+			&lt;/div&gt;
+			&lt;!-- /.Select --&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Select Select--default Select--s&quot;&gt;
+				&lt;select&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+        				&lt;/select&gt;
+			&lt;/div&gt;
+			&lt;!-- /.Select --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.u-container-white-border --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.05-select-groups">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Select Groups</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="Select-group Select-group--l">
+			<span class="Input-group__addon">£</span>
+			<div class="Select Select--default Select--l">
+				<select>
+          					<option value="">Option 1</option>
+          					<option value="">Option 2</option>
+          					<option value="">Option 3</option>
+          					<option value="">Option 4</option>
+          					<option value="">Option 5</option>
+        				</select>
+			</div>
+			<!-- /.Select -->
+		</div>
+		<!-- /.Select-group -->
+		<div class="u-marginTop-m">
+			<div class="Select-group Select-group--m">
+				<span class="Input-group__addon">£</span>
+				<div class="Select Select--default Select--m">
+					<select>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                        <option value="">Option 4</option>
+                        <option value="">Option 5</option>
+                    </select>
+				</div>
+				<!-- /.Select -->
+			</div>
+			<!-- /.Select-group -->
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Select-group Select-group--s">
+				<span class="Input-group__addon">£</span>
+				<div class="Select Select--default Select--s">
+					<select>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                        <option value="">Option 4</option>
+                        <option value="">Option 5</option>
+                    </select>
+				</div>
+				<!-- /.Select -->
+			</div>
+			<!-- /.Select-group -->
+		</div>
+	</div>
+</div>
+<!-- /.u-container-white-border -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;Select-group Select-group--l&quot;&gt;
+			&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;£&lt;/span&gt;
+			&lt;div class&#x3D;&quot;Select Select--default Select--l&quot;&gt;
+				&lt;select&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+          					&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+        				&lt;/select&gt;
+			&lt;/div&gt;
+			&lt;!-- /.Select --&gt;
+		&lt;/div&gt;
+		&lt;!-- /.Select-group --&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Select-group Select-group--m&quot;&gt;
+				&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;£&lt;/span&gt;
+				&lt;div class&#x3D;&quot;Select Select--default Select--m&quot;&gt;
+					&lt;select&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+                    &lt;/select&gt;
+				&lt;/div&gt;
+				&lt;!-- /.Select --&gt;
+			&lt;/div&gt;
+			&lt;!-- /.Select-group --&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Select-group Select-group--s&quot;&gt;
+				&lt;span class&#x3D;&quot;Input-group__addon&quot;&gt;£&lt;/span&gt;
+				&lt;div class&#x3D;&quot;Select Select--default Select--s&quot;&gt;
+					&lt;select&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+                        &lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+                    &lt;/select&gt;
+				&lt;/div&gt;
+				&lt;!-- /.Select --&gt;
+			&lt;/div&gt;
+			&lt;!-- /.Select-group --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /.u-container-white-border --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.06-search-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Search Input</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="Search">
+			<span class="Search__icon--l"><i class="material-icons">search</i></span>
+			<input class="Search__input Input Input--default Input--l" type="search" placeholder="What are you looking for?" id="textInput" />
+		</div>
+		<div class="u-marginTop-m">
+			<div class="Search">
+				<span class="Search__icon--m"><i class="material-icons">search</i></span>
+				<input class="Search__input Input Input--default Input--m" type="search" placeholder="What are you looking for?" id="textInput" />
+			</div>
+		</div>
+	</div>
+	<!-- /.u-padding-l -->
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;Search&quot;&gt;
+			&lt;span class&#x3D;&quot;Search__icon--l&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;search&lt;/i&gt;&lt;/span&gt;
+			&lt;input class&#x3D;&quot;Search__input Input Input--default Input--l&quot; type&#x3D;&quot;search&quot; placeholder&#x3D;&quot;What are you looking for?&quot; id&#x3D;&quot;textInput&quot; /&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;u-marginTop-m&quot;&gt;
+			&lt;div class&#x3D;&quot;Search&quot;&gt;
+				&lt;span class&#x3D;&quot;Search__icon--m&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;search&lt;/i&gt;&lt;/span&gt;
+				&lt;input class&#x3D;&quot;Search__input Input Input--default Input--m&quot; type&#x3D;&quot;search&quot; placeholder&#x3D;&quot;What are you looking for?&quot; id&#x3D;&quot;textInput&quot; /&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /.u-padding-l --&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.07-radio">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Radio</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<label class="Control Control--radio">First checkbox
+						<input type="radio" name="radio" checked="checked"/>
+						<div class="Control__indicator"></div>
+				</label>
+		<label class="Control Control--radio">Second checkbox
+						<input type="radio" name="radio"/>
+						<div class="Control__indicator"></div>
+				</label>
+		<label class="Control Control--radio">Disabled
+						<input type="radio" name="radio2" disabled="disabled"/>
+						<div class="Control__indicator"></div>
+				</label>
+		<label class="Control Control--radio">Disabled &amp; checked
+						<input type="radio" name="radio2" disabled="disabled" checked="checked"/>
+						<div class="Control__indicator"></div>
+				</label>
+	</div>
+	<!--/.u-padding-l -->
+</div>
+<!--/.u-container-white-border -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;label class&#x3D;&quot;Control Control--radio&quot;&gt;First checkbox
+						&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot; checked&#x3D;&quot;checked&quot;/&gt;
+						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+				&lt;/label&gt;
+		&lt;label class&#x3D;&quot;Control Control--radio&quot;&gt;Second checkbox
+						&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot;/&gt;
+						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+				&lt;/label&gt;
+		&lt;label class&#x3D;&quot;Control Control--radio&quot;&gt;Disabled
+						&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio2&quot; disabled&#x3D;&quot;disabled&quot;/&gt;
+						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+				&lt;/label&gt;
+		&lt;label class&#x3D;&quot;Control Control--radio&quot;&gt;Disabled &amp;amp; checked
+						&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio2&quot; disabled&#x3D;&quot;disabled&quot; checked&#x3D;&quot;checked&quot;/&gt;
+						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+				&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;!--/.u-padding-l --&gt;
+&lt;/div&gt;
+&lt;!--/.u-container-white-border --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.08-checkbox">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Checkbox</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<label class="Control Control--checkbox">First checkbox
+						<input type="checkbox" checked="checked"/>
+						<div class="Control__indicator"></div>
+				</label>
+		<label class="Control Control--checkbox">Second checkbox
+						<input type="checkbox"/>
+						<div class="Control__indicator"></div>
+				</label>
+		<label class="Control Control--checkbox">Disabled
+						<input type="checkbox" disabled="disabled"/>
+						<div class="Control__indicator"></div>
+				</label>
+		<label class="Control Control--checkbox">Disabled &amp; checked
+						<input type="checkbox" disabled="disabled" checked="checked"/>
+						<div class="Control__indicator"></div>
+				</label>
+	</div>
+	<!--/.u-padding-l -->
+</div>
+<!--/.u-container-white-border -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;label class&#x3D;&quot;Control Control--checkbox&quot;&gt;First checkbox
+						&lt;input type&#x3D;&quot;checkbox&quot; checked&#x3D;&quot;checked&quot;/&gt;
+						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+				&lt;/label&gt;
+		&lt;label class&#x3D;&quot;Control Control--checkbox&quot;&gt;Second checkbox
+						&lt;input type&#x3D;&quot;checkbox&quot;/&gt;
+						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+				&lt;/label&gt;
+		&lt;label class&#x3D;&quot;Control Control--checkbox&quot;&gt;Disabled
+						&lt;input type&#x3D;&quot;checkbox&quot; disabled&#x3D;&quot;disabled&quot;/&gt;
+						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+				&lt;/label&gt;
+		&lt;label class&#x3D;&quot;Control Control--checkbox&quot;&gt;Disabled &amp;amp; checked
+						&lt;input type&#x3D;&quot;checkbox&quot; disabled&#x3D;&quot;disabled&quot; checked&#x3D;&quot;checked&quot;/&gt;
+						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+				&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;!--/.u-padding-l --&gt;
+&lt;/div&gt;
+&lt;!--/.u-container-white-border --&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.09-color-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Color Input</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<input class="" type="color" placeholder="Email address" id="textInput" />
+	</div>
+	<!-- /.u-padding-l -->
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;input class&#x3D;&quot;&quot; type&#x3D;&quot;color&quot; placeholder&#x3D;&quot;Email address&quot; id&#x3D;&quot;textInput&quot; /&gt;
+	&lt;/div&gt;
+	&lt;!-- /.u-padding-l --&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.10-range-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Range Input</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<input class="" type="range" placeholder="Email address" id="textInput" />
+	</div>
+	<!-- /.u-padding-l -->
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;input class&#x3D;&quot;&quot; type&#x3D;&quot;range&quot; placeholder&#x3D;&quot;Email address&quot; id&#x3D;&quot;textInput&quot; /&gt;
+	&lt;/div&gt;
+	&lt;!-- /.u-padding-l --&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.11-file-input">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">File Input</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<label>
+            <span class="Button Button--secondary Button--s">Choose file</span>
+            <input type="file" onchange="parentNode.setAttribute('data-file', this.files[0].name)">
+        </label>
+	</div>
+	<!-- /.u-padding-l -->
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;label&gt;
+            &lt;span class&#x3D;&quot;Button Button--secondary Button--s&quot;&gt;Choose file&lt;/span&gt;
+            &lt;input type&#x3D;&quot;file&quot; onchange&#x3D;&quot;parentNode.setAttribute(&#x27;data-file&#x27;, this.files[0].name)&quot;&gt;
+        &lt;/label&gt;
+	&lt;/div&gt;
+	&lt;!-- /.u-padding-l --&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.12-form-group">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Form Group</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<form action="#forms">
+			<div class="u-marginBottom-xs">
+				<label class="Form-label" for="">Name</label>
+				<input class="Input Input--default Input--m" type="text" placeholder="Name">
+			</div>
+			<div class="u-marginBottom-xs">
+				<label class="Form-label" for="">Email</label>
+				<input class="Input Input--default Input--m" type="text" placeholder="Email">
+			</div>
+			<div class="u-marginBottom-xs">
+				<label class="Control Control--radio">Entrepreneur
+                <input type="radio" name="radio" checked="checked"/>
+                <div class="Control__indicator"></div>
+            </label>
+				<label class="Control Control--radio">Investor
+    						<input type="radio" name="radio" checked="checked"/>
+    						<div class="Control__indicator"></div>
+    				</label>
+			</div>
+			<div class="u-marginBottom-xs">
+				<label class="Form-label" for="textArea">Description</label>
+				<textarea class="Textarea Textarea--default Textarea--m" name="" placeholder="Start typing..." id="textArea"></textarea>
+			</div>
+			<div class="u-marginBottom-s">
+				<label class="Control Control--checkbox">Remember me
+      						<input type="checkbox"/>
+      						<div class="Control__indicator"></div>
+      				</label>
+			</div>
+			<div class="">
+				<button class="Button Button--primary Button--m">Submit</button>
+				<button class="Button Button-link Button--m">Cancel</button>
+			</div>
+		</form>
+
+
+	</div>
+	<!-- /.u-padding-l -->
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;form action&#x3D;&quot;#forms&quot;&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-xs&quot;&gt;
+				&lt;label class&#x3D;&quot;Form-label&quot; for&#x3D;&quot;&quot;&gt;Name&lt;/label&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--m&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Name&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-xs&quot;&gt;
+				&lt;label class&#x3D;&quot;Form-label&quot; for&#x3D;&quot;&quot;&gt;Email&lt;/label&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--m&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Email&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-xs&quot;&gt;
+				&lt;label class&#x3D;&quot;Control Control--radio&quot;&gt;Entrepreneur
+                &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot; checked&#x3D;&quot;checked&quot;/&gt;
+                &lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+            &lt;/label&gt;
+				&lt;label class&#x3D;&quot;Control Control--radio&quot;&gt;Investor
+    						&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot; checked&#x3D;&quot;checked&quot;/&gt;
+    						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+    				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-xs&quot;&gt;
+				&lt;label class&#x3D;&quot;Form-label&quot; for&#x3D;&quot;textArea&quot;&gt;Description&lt;/label&gt;
+				&lt;textarea class&#x3D;&quot;Textarea Textarea--default Textarea--m&quot; name&#x3D;&quot;&quot; placeholder&#x3D;&quot;Start typing...&quot; id&#x3D;&quot;textArea&quot;&gt;&lt;/textarea&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-s&quot;&gt;
+				&lt;label class&#x3D;&quot;Control Control--checkbox&quot;&gt;Remember me
+      						&lt;input type&#x3D;&quot;checkbox&quot;/&gt;
+      						&lt;div class&#x3D;&quot;Control__indicator&quot;&gt;&lt;/div&gt;
+      				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;&quot;&gt;
+				&lt;button class&#x3D;&quot;Button Button--primary Button--m&quot;&gt;Submit&lt;/button&gt;
+				&lt;button class&#x3D;&quot;Button Button-link Button--m&quot;&gt;Cancel&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/form&gt;
+
+
+	&lt;/div&gt;
+	&lt;!-- /.u-padding-l --&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.13-form-hints">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Form Hints</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<form action="#forms">
+			<div class="u-marginBottom-xs">
+				<label class="Form-label" for="">Name</label>
+				<input class="Input Input--default Input--m has-danger" type="text" placeholder="Name">
+				<p class="Input-hint--danger">Name is invalid.</p>
+			</div>
+			<div class="u-marginBottom-xs is-success">
+				<label class="Form-label" for="">Email</label>
+				<input class="Input Input--default Input--m has-success" type="text" placeholder="Email">
+				<p class="Input-hint--success">Email is available.</p>
+			</div>
+		</form>
+	</div>
+	<!-- /.u-padding-l -->
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;form action&#x3D;&quot;#forms&quot;&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-xs&quot;&gt;
+				&lt;label class&#x3D;&quot;Form-label&quot; for&#x3D;&quot;&quot;&gt;Name&lt;/label&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--m has-danger&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Name&quot;&gt;
+				&lt;p class&#x3D;&quot;Input-hint--danger&quot;&gt;Name is invalid.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;u-marginBottom-xs is-success&quot;&gt;
+				&lt;label class&#x3D;&quot;Form-label&quot; for&#x3D;&quot;&quot;&gt;Email&lt;/label&gt;
+				&lt;input class&#x3D;&quot;Input Input--default Input--m has-success&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Email&quot;&gt;
+				&lt;p class&#x3D;&quot;Input-hint--success&quot;&gt;Email is available.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+	&lt;!-- /.u-padding-l --&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="forms.14-tags">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Tags</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Tags are used...</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<div class="Tag Tag--s">
+			<span>Tech</span>
+			<button class=""><i class="material-icons md-18">close</i></button>
+		</div>
+		<div class="Tag Tag--s">
+			<span>Sports &amp; leisure</span>
+			<button class=""><i class="material-icons md-18">close</i></button>
+		</div>
+		<div class="Tag Tag--s">
+			<span>Robotics</span>
+			<button class=""><i class="material-icons md-18">close</i></button>
+		</div>
+		<div class="Tag Tag--s">
+			<span>Property</span>
+			<button class=""><i class="material-icons md-18">close</i></button>
+		</div>
+		<div class="Tag Tag--s">
+			<span>Retail</span>
+			<button class=""><i class="material-icons md-18">close</i></button>
+		</div>
+		<div class="Tag Tag--s">
+			<span>Agriculture</span>
+			<button class=""><i class="material-icons md-18">close</i></button>
+		</div>
+	</div>
+	<!-- /.u-padding-l -->
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;div class&#x3D;&quot;Tag Tag--s&quot;&gt;
+			&lt;span&gt;Tech&lt;/span&gt;
+			&lt;button class&#x3D;&quot;&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;close&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;Tag Tag--s&quot;&gt;
+			&lt;span&gt;Sports &amp;amp; leisure&lt;/span&gt;
+			&lt;button class&#x3D;&quot;&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;close&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;Tag Tag--s&quot;&gt;
+			&lt;span&gt;Robotics&lt;/span&gt;
+			&lt;button class&#x3D;&quot;&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;close&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;Tag Tag--s&quot;&gt;
+			&lt;span&gt;Property&lt;/span&gt;
+			&lt;button class&#x3D;&quot;&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;close&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;Tag Tag--s&quot;&gt;
+			&lt;span&gt;Retail&lt;/span&gt;
+			&lt;button class&#x3D;&quot;&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;close&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;Tag Tag--s&quot;&gt;
+			&lt;span&gt;Agriculture&lt;/span&gt;
+			&lt;button class&#x3D;&quot;&quot;&gt;&lt;i class&#x3D;&quot;material-icons md-18&quot;&gt;close&lt;/i&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /.u-padding-l --&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="labels">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Checkbox</h2>
+		<h2 class="f-item-heading">Labels</h2>
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
@@ -1141,14 +2593,30 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<label>
-	<input type="checkbox" /> Checkbox
-</label>
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<span class="Label Label--default">Default</span>
+		<span class="Label Label--success">Success</span>
+		<span class="Label Label--info">Info</span>
+		<span class="Label Label--warning">Warning</span>
+		<span class="Label Label--danger">Danger</span>
+	</div>
+	<!--/.u-padding-l -->
+</div>
+<!--/.u-container-white-border -->
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
-&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;span class&#x3D;&quot;Label Label--default&quot;&gt;Default&lt;/span&gt;
+		&lt;span class&#x3D;&quot;Label Label--success&quot;&gt;Success&lt;/span&gt;
+		&lt;span class&#x3D;&quot;Label Label--info&quot;&gt;Info&lt;/span&gt;
+		&lt;span class&#x3D;&quot;Label Label--warning&quot;&gt;Warning&lt;/span&gt;
+		&lt;span class&#x3D;&quot;Label Label--danger&quot;&gt;Danger&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;!--/.u-padding-l --&gt;
+&lt;/div&gt;
+&lt;!--/.u-container-white-border --&gt;</code></pre>
 </div>
 
 
@@ -1173,18 +2641,26 @@
 				</div>
 			</div>
 <div class="f-item-preview">
-	<ol>
-	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-	<li>Aliquam tincidunt mauris eu risus.</li>
-	<li>Vestibulum auctor dapibus neque.</li>
-</ol>
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<ol>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li>Aliquam tincidunt mauris eu risus.</li>
+			<li>Vestibulum auctor dapibus neque.</li>
+		</ol>
+	</div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ol&gt;
-	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;ol&gt;
+			&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+			&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+			&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 		</div>
@@ -1201,21 +2677,65 @@
 				</div>
 			</div>
 <div class="f-item-preview">
-	<ul>
-	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-	<li>Aliquam tincidunt mauris eu risus.</li>
-	<li>Vestibulum auctor dapibus neque.</li>
-</ul>
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<ul>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li>Aliquam tincidunt mauris eu risus.</li>
+			<li>Vestibulum auctor dapibus neque.</li>
+		</ul>
+	</div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ul&gt;
-	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+			&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+			&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 		</div>
+
+</div>
+
+
+<div class="f-item-group" id="loading">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Loading</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="u-container-blue u-marginBottom-s">
+	<div class="u-padding-l">
+		<button class="Loading">Link button</button>
+	</div>
+	<!--/.u-padding-l -->
+</div>
+<!--/.u-container-white-border -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-blue u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;button class&#x3D;&quot;Loading&quot;&gt;Link button&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;!--/.u-padding-l --&gt;
+&lt;/div&gt;
+&lt;!--/.u-container-white-border --&gt;</code></pre>
+</div>
+
 
 </div>
 
@@ -1234,92 +2754,20 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="radio">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Radio</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
+	<div class="u-container-white-border u-marginBottom-s">
+	<div class="u-padding-l">
+		<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+			nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
 	</div>
-<div class="f-item-preview">
-	<label>
-	<input type="radio" name="groupName" id="radio1" /> Radio 1
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio2" /> Radio 2
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio3" /> Radio 3
-</label>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; /&gt; Radio 1
-&lt;/label&gt;
-
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; /&gt; Radio 2
-&lt;/label&gt;
-
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; /&gt; Radio 3
-&lt;/label&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="select">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Select</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div>
-<div class="f-item-preview">
-	<select name="" id="">
-	<option value="">Option 1</option>
-	<option value="">Option 2</option>
-	<option value="">Option 3</option>
-	<option value="">Option 4</option>
-	<option value="">Option 5</option>
-</select>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-&lt;/select&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
+	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
+		&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+			nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -1340,156 +2788,80 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<table>
+	<table class="Table Table-striped">
 	<thead>
 		<tr>
-			<th>Table Heading 1</th>
-			<th>Table Heading 2</th>
-			<th>Table Heading 3</th>
+			<th>Name</th>
+			<th>Duration</th>
+			<th>Genre</th>
+			<th>Release Date</th>
 		</tr>
 	</thead>
-	<tfoot>
-		<tr>
-			<th>Table Footer 1</th>
-			<th>Table Footer 2</th>
-			<th>Table Footer 3</th>
-		</tr>
-	</tfoot>
 	<tbody>
 		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
+			<td>The Shawshank Redemption</td>
+			<td>2h 22min</td>
+			<td>Crime, Drama</td>
+			<td>14 October 1994</td>
 		</tr>
 		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
+			<td>The Godfather</td>
+			<td>2h 55min</td>
+			<td>Crime, Drama</td>
+			<td>24 March 1972</td>
 		</tr>
 		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
+			<td>Schindler's List</td>
+			<td>3h 15min</td>
+			<td>Biography, Drama, History</td>
+			<td>4 February 1994</td>
 		</tr>
 		<tr>
-			<td>Table Cell 1</td>
-			<td>Table Cell 2</td>
-			<td>Table Cell 3</td>
+			<td>Se7en</td>
+			<td>2h 7min</td>
+			<td>Crime, Drama, Mystery</td>
+			<td>22 September 1995</td>
 		</tr>
 	</tbody>
 </table>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;table&gt;
+	<pre><code class="language-markup">&lt;table class&#x3D;&quot;Table Table-striped&quot;&gt;
 	&lt;thead&gt;
 		&lt;tr&gt;
-			&lt;th&gt;Table Heading 1&lt;/th&gt;
-			&lt;th&gt;Table Heading 2&lt;/th&gt;
-			&lt;th&gt;Table Heading 3&lt;/th&gt;
+			&lt;th&gt;Name&lt;/th&gt;
+			&lt;th&gt;Duration&lt;/th&gt;
+			&lt;th&gt;Genre&lt;/th&gt;
+			&lt;th&gt;Release Date&lt;/th&gt;
 		&lt;/tr&gt;
 	&lt;/thead&gt;
-	&lt;tfoot&gt;
-		&lt;tr&gt;
-			&lt;th&gt;Table Footer 1&lt;/th&gt;
-			&lt;th&gt;Table Footer 2&lt;/th&gt;
-			&lt;th&gt;Table Footer 3&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/tfoot&gt;
 	&lt;tbody&gt;
 		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
+			&lt;td&gt;The Shawshank Redemption&lt;/td&gt;
+			&lt;td&gt;2h 22min&lt;/td&gt;
+			&lt;td&gt;Crime, Drama&lt;/td&gt;
+			&lt;td&gt;14 October 1994&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
+			&lt;td&gt;The Godfather&lt;/td&gt;
+			&lt;td&gt;2h 55min&lt;/td&gt;
+			&lt;td&gt;Crime, Drama&lt;/td&gt;
+			&lt;td&gt;24 March 1972&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
+			&lt;td&gt;Schindler&#x27;s List&lt;/td&gt;
+			&lt;td&gt;3h 15min&lt;/td&gt;
+			&lt;td&gt;Biography, Drama, History&lt;/td&gt;
+			&lt;td&gt;4 February 1994&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
-			&lt;td&gt;Table Cell 1&lt;/td&gt;
-			&lt;td&gt;Table Cell 2&lt;/td&gt;
-			&lt;td&gt;Table Cell 3&lt;/td&gt;
+			&lt;td&gt;Se7en&lt;/td&gt;
+			&lt;td&gt;2h 7min&lt;/td&gt;
+			&lt;td&gt;Crime, Drama, Mystery&lt;/td&gt;
+			&lt;td&gt;22 September 1995&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="text-input">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Text Input</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div>
-<div class="f-item-preview">
-	<div class="u-container-white-border u-marginBottom-s">
-	<div class="u-padding-l">
-		<label for="textInput">Email Address</label>
-		<input type="text" placeholder="Email address" id="textInput" />
-		<label for="textInput">Password</label>
-		<input type="password" placeholder="Password" id="textInput" />
-	</div>
-</div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
-	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
-		&lt;label for&#x3D;&quot;textInput&quot;&gt;Email Address&lt;/label&gt;
-		&lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Email address&quot; id&#x3D;&quot;textInput&quot; /&gt;
-		&lt;label for&#x3D;&quot;textInput&quot;&gt;Password&lt;/label&gt;
-		&lt;input type&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Password&quot; id&#x3D;&quot;textInput&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="textarea">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Textarea</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div>
-<div class="f-item-preview">
-	<div class="u-container-white-border u-marginBottom-s">
-	<div class="u-padding-l">
-		<label for="textArea">Description</label>
-		<textarea name="" placeholder="Start typing..." id="textArea" cols="30" rows="10"></textarea>
-	</div>
-</div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
-	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
-		&lt;label for&#x3D;&quot;textArea&quot;&gt;Description&lt;/label&gt;
-		&lt;textarea name&#x3D;&quot;&quot; placeholder&#x3D;&quot;Start typing...&quot; id&#x3D;&quot;textArea&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;10&quot;&gt;&lt;/textarea&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
 </div>
 
 
