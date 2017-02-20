@@ -29,14 +29,7 @@ select {
 }
 
 .Select:after {
-    content: "";
-}
-
-.Select:after {
-    width: auto;
-    height: auto;
     background: none;
-    background-size: auto;
     position: absolute;
     top: 0;
     right: 0;
@@ -45,7 +38,7 @@ select {
     transition: none;
     -webkit-transform: scale(1);
     transform: scale(1);
-    z-index: -999;
+    z-index: 999;
 }
 
 /**
