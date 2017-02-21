@@ -25,7 +25,7 @@ select {
   vertical-align: middle;
   border-width: 0;
   -webkit-transition-duration: 80ms;
-  transition-duration: 80ms
+  transition-duration: 80ms;
 }
 
 .Select:after {
@@ -38,7 +38,7 @@ select {
     transition: none;
     -webkit-transform: scale(1);
     transform: scale(1);
-    z-index: 999;
+    z-index: $zIndex-1;
 }
 
 /**
@@ -65,18 +65,24 @@ select {
  	font-size: 16px;
  	height: 50px;
   padding: 0 50px 0 20px;
+  position: relative;
+  z-index: $zIndex-2;
  }
 
  .Select--m select {
  	font-size: 14px;
  	height: 40px;
   padding: 0 50px 0 20px;
+  position: relative;
+  z-index: $zIndex-2;
  }
 
  .Select--s select {
  	font-size: 12px;
  	height: 30px;
   padding: 0 50px 0 20px;
+  position: relative;
+  z-index: $zIndex-2;
  }
 
 .Select--l:after {
