@@ -1,0 +1,78 @@
+.tooltip {
+    position: relative;
+}
+
+.tooltip::after {
+    background: rgba(51, 51, 51, .9);
+    border-radius: .2rem;
+    bottom: 100%;
+    color: $color-white;
+    content: attr(data-tooltip);
+    display: block;
+    font-size: $font-size-smaller;
+    left: 50%;
+    line-height: 1rem;
+    max-width: 30rem;
+    opacity: 0;
+    //overflow: hidden;
+    padding: .4rem 1rem;
+    pointer-events: none;
+    position: absolute;
+    //text-overflow: ellipsis;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    transition: all .216s ease;
+    z-index: 99;
+}
+
+.tooltip:focus::after, .tooltip:hover::after {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -.5rem);
+    -ms-transform: translate(-50%, -.5rem);
+    transform: translate(-50%, -.5rem);
+}
+
+
+.tooltip.tooltip-right::after {
+    bottom: 50%;
+    left: 100%;
+    -webkit-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+}
+
+.tooltip.tooltip-right:focus::after, .tooltip.tooltip-right:hover::after {
+    -webkit-transform: translate(.5rem, 50%);
+    -ms-transform: translate(.5rem, 50%);
+    transform: translate(.5rem, 50%);
+}
+
+.tooltip.tooltip-bottom::after {
+    bottom: auto;
+    top: 100%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.tooltip.tooltip-bottom:focus::after, .tooltip.tooltip-bottom:hover::after {
+    -webkit-transform: translate(-50%, .5rem);
+    -ms-transform: translate(-50%, .5rem);
+    transform: translate(-50%, .5rem);
+}
+
+.tooltip.tooltip-left::after {
+    bottom: 50%;
+    left: auto;
+    right: 100%;
+    -webkit-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+}
+
+.tooltip.tooltip-left:focus::after, .tooltip.tooltip-left:hover::after {
+    -webkit-transform: translate(-.5rem, 50%);
+    -ms-transform: translate(-.5rem, 50%);
+    transform: translate(-.5rem, 50%);
+}
