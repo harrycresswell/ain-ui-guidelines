@@ -17,7 +17,9 @@ textarea {
   appearance: none;
   border-width: 0;
   -webkit-transition-duration: 80ms;
-  transition-duration: 80ms
+  transition-duration: 80ms;
+  letter-spacing: 0px;
+  line-height: 26px;
 }
 
 /**
@@ -29,23 +31,14 @@ textarea {
 
  .Textarea--default::-webkit-input-placeholder {
   color: #B4C3D3;
- 	letter-spacing: 0px;
- 	vertical-align: middle;
- 	line-height: 16px;
  }
 
  .Textarea--default::-moz-placeholder {  /* Firefox 19+ */
   color: #B4C3D3;
- 	letter-spacing: 0px;
- 	vertical-align: middle;
- 	line-height: 16px;
  }
 
  .Textarea--default:-ms-input-placeholder {
   color: #B4C3D3;
- 	letter-spacing: 0px;
- 	vertical-align: middle;
- 	line-height: 16px;
  }
 
 
