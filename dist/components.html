@@ -2358,9 +2358,11 @@
 <div class="f-item-preview">
 	<div class="u-container-white-border u-marginBottom-s">
 	<div class="u-padding-l">
-		<label>
-            <span class="Button Button--secondary Button--s">Choose file</span>
+		<label class="Input-group Input-group--m">
+            <span class="Input Input--default Input--m">
             <input type="file" onchange="parentNode.setAttribute('data-file', this.files[0].name)">
+            </span>
+            <span class="Button Button--secondary Button--m Input-group__addon">Choose file</span>
         </label>
 	</div>
 	<!-- /.u-padding-l -->
@@ -2369,9 +2371,11 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
 	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
-		&lt;label&gt;
-            &lt;span class&#x3D;&quot;Button Button--secondary Button--s&quot;&gt;Choose file&lt;/span&gt;
+		&lt;label class&#x3D;&quot;Input-group Input-group--m&quot;&gt;
+            &lt;span class&#x3D;&quot;Input Input--default Input--m&quot;&gt;
             &lt;input type&#x3D;&quot;file&quot; onchange&#x3D;&quot;parentNode.setAttribute(&#x27;data-file&#x27;, this.files[0].name)&quot;&gt;
+            &lt;/span&gt;
+            &lt;span class&#x3D;&quot;Button Button--secondary Button--m Input-group__addon&quot;&gt;Choose file&lt;/span&gt;
         &lt;/label&gt;
 	&lt;/div&gt;
 	&lt;!-- /.u-padding-l --&gt;
@@ -2757,18 +2761,18 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<div class="u-container-blue u-marginBottom-s">
+	<div class="u-container-white-border u-marginBottom-s">
 	<div class="u-padding-l">
-		<button class="Loading">Link button</button>
+		<div class="Loading"></div>
 	</div>
 	<!--/.u-padding-l -->
 </div>
 <!--/.u-container-white-border -->
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-blue u-marginBottom-s&quot;&gt;
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;u-container-white-border u-marginBottom-s&quot;&gt;
 	&lt;div class&#x3D;&quot;u-padding-l&quot;&gt;
-		&lt;button class&#x3D;&quot;Loading&quot;&gt;Link button&lt;/button&gt;
+		&lt;div class&#x3D;&quot;Loading&quot;&gt;&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;!--/.u-padding-l --&gt;
 &lt;/div&gt;
